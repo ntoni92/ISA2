@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 ENTITY mult_n IS
 GENERIC(
-Nb: INTEGER := 9
+Nb: INTEGER := 9;
 pipe_depth: INTEGER:= 10);
 PORT(
 in_a: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
@@ -30,36 +30,39 @@ ARCHITECTURE beh_mult OF mult_n IS
 	END COMPONENT;
 
 	SIGNAL mult_signed: SIGNED((2*Nb)-1 DOWNTO 0);
-	SIGNAL VIN_delay_line: STD_LOGIC_VECTOR(10 DOWNTO 0); ---- SEGNALI DELLA DELAY LINE
 	SIGNAL in_a_reg_to_mult: STD_LOGIC_VECTOR (Nb-1 DOWNTO 0);
 	SIGNAL in_b_reg_to_mult: STD_LOGIC_VECTOR (Nb-1 DOWNTO 0);
 	SIGNAL pipe_array_signal: pipe_array_type;
 	SIGNAL enable_array_signal: STD_LOGIC_VECTOR (pipe_depth DOWNTO 0); --ARRAY OF ENABLE SIGNALS
+	SIGNAL enable_in_vect: STD_LOGIC_VECTOR (0 DOWNTO 0);
+	SIGNAL enable_out_vect: STD_LOGIC_VECTOR (0 DOWNTO 0);
 
 BEGIN
+	enable_in_vect(0) <= enable_in;
+	enable_out <= enable_out_vect(0); 
 	a_in_reg: Reg_n GENERIC MAP (Nb => Nb)
 			PORT MAP (CLK => CLK, RST_n => RST_n, EN => enable_in, 
 					DIN => in_a, 
 					DOUT => in_a_reg_to_mult);
 
-	b_in_reg: Reg_n GENERIC MAP
+	b_in_reg: Reg_n GENERIC MAP (Nb => Nb)
 			PORT MAP (CLK => CLK, RST_n => RST_n, EN => enable_in, 
 					DIN => in_b, 
 					DOUT => in_b_reg_to_mult);
 
 	mult_out_reg: Reg_n GENERIC MAP (Nb => 2*Nb)
-				PORT MAP (CLK => CLK, RST_n => RST_n, EN => enable_in, 
+				PORT MAP (CLK => CLK, RST_n => RST_n, EN => enable_array_signal(pipe_depth), 
 						DIN => pipe_array_signal(pipe_depth), 
 						DOUT => mult_out);
 
 	en_in_reg: Reg_n GENERIC MAP (Nb => 1)
 				PORT MAP (CLK => CLK, RST_n => RST_n, EN => '1', 
-						DIN => enable_in, 
-						DOUT => enable_array_signal(0));
+						DIN => enable_in_vect, 
+						DOUT => enable_array_signal(0 DOWNTO 0));
 	en_out_reg: Reg_n GENERIC MAP (Nb => 1)
 				PORT MAP (CLK => CLK, RST_n => RST_n, EN => '1', 
-						DIN => enable_array_signal(pipe_depth), 
-						DOUT => enable_out);
+						DIN => enable_array_signal(pipe_depth DOWNTO pipe_depth), 
+						DOUT => enable_out_vect);
 	
 	mult_pipe: FOR i IN 0 TO pipe_depth-1 GENERATE
 		mult_pipe_cell: Reg_n 
@@ -71,14 +74,14 @@ BEGIN
 		mult_delay_cell: Reg_n 
 				GENERIC MAP (Nb => 1) 
 				PORT MAP (CLK => CLK, RST_n => RST_n, EN => '1', 
-						DIN => enable_array_signal(i); 
-						DOUT => enable_array_signal(i+1));
+						DIN => enable_array_signal(i DOWNTO i), 
+						DOUT => enable_array_signal(i+1 DOWNTO i+1));
 	END GENERATE;
 
 	multiplication: PROCESS(in_a_reg_to_mult, in_b_reg_to_mult)
-	BEGIN
-		mult_signed <= SIGNED(in_a_reg_to_mult) * SIGNED(in_b_reg_to_mult);
-	END PROCESS;
+			BEGIN
+				mult_signed <= SIGNED(in_a_reg_to_mult) * SIGNED(in_b_reg_to_mult);
+			END PROCESS;
 
 	pipe_array_signal(0) <= STD_LOGIC_VECTOR(mult_signed);
 END beh_mult;
