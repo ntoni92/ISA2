@@ -4,7 +4,7 @@ USE ieee.numeric_std.all;
 ENTITY mult_n IS
 GENERIC(
 Nb: INTEGER := 9;
-pipe_depth: INTEGER:= 10);
+pipe_d: INTEGER:= 10);
 PORT(
 in_a: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
 in_b: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
@@ -18,6 +18,7 @@ END ENTITY;
 
 ARCHITECTURE beh_mult OF mult_n IS
 
+	CONSTANT pipe_depth: INTEGER := pipe_d-2;
 	TYPE pipe_array_type IS ARRAY(pipe_depth DOWNTO 0) OF STD_LOGIC_VECTOR(2*Nb-1 DOWNTO 0);
 
 	COMPONENT Reg_n IS
@@ -36,6 +37,7 @@ ARCHITECTURE beh_mult OF mult_n IS
 	SIGNAL enable_array_signal: STD_LOGIC_VECTOR (pipe_depth DOWNTO 0); --ARRAY OF ENABLE SIGNALS
 	SIGNAL enable_in_vect: STD_LOGIC_VECTOR (0 DOWNTO 0);
 	SIGNAL enable_out_vect: STD_LOGIC_VECTOR (0 DOWNTO 0);
+	
 
 BEGIN
 	enable_in_vect(0) <= enable_in;

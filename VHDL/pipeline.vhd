@@ -5,7 +5,7 @@ USE ieee.numeric_std.all;
 ENTITY pipeline IS
 GENERIC(
 Nb: INTEGER := 9;
-pipe_depth: INTEGER:= 10);
+pipe_d: INTEGER:= 10);
 PORT(
 DIN: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
 DOUT: OUT STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
@@ -18,9 +18,11 @@ END ENTITY;
 
 ARCHITECTURE structural OF pipeline IS
 
+CONSTANT pipe_depth: INTEGER := pipe_d-2;
 TYPE pipe_array_type IS ARRAY(pipe_depth+2 DOWNTO 0) OF STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
 SIGNAL pipe_array_signal: pipe_array_type;
 SIGNAL enable_array_signal: STD_LOGIC_VECTOR (pipe_depth+2 DOWNTO 0); --ARRAY OF ENABLE SIGNALS
+
 
 COMPONENT Reg_n IS
 		GENERIC(Nb: INTEGER :=9);
