@@ -99,7 +99,11 @@ int main()
         fprintf(fp,"\t\t);\n");
         fprintf(fp,"\tEND GENERATE;\n\n");
 
-
+		
+		if (N == N_BK)
+		{
+			// GENERATE FULL ADDERS
+		}
         fprintf(fp,"END struct;\n");
 
         fclose(fp);
