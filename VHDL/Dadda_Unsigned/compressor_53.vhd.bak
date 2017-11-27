@@ -1,0 +1,19 @@
+Library IEEE;
+Use ieee.std_logic_1164.all;
+
+entity halfadd is
+  port(A,B,C,D CARRY_IN:     in  bit;
+       SUM, CARRY_OUT: out bit);
+end entity;
+
+architecture DATAFLOW of halfadd is
+
+	Signal f1tof2: std_logic;
+
+	Component fulladd IS
+	PORT (    Cin, x, y: IN STD_LOGIC ;
+					s, Cout: OUT STD_LOGIC ) ;
+	END component;
+begin
+   f1: fulladd 
+end DATAFLOW;

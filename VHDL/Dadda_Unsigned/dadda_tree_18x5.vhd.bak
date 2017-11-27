@@ -1,0 +1,23 @@
+Library IEEE;
+Use ieee.
+
+Entity dadda_tree_18x5 is
+Port(
+	in0: std_logic_vector (17 DOWNTO 0);
+	in1: std_logic_vector (17 DOWNTO 0);
+	in2: std_logic_vector (17 DOWNTO 0);
+	in3: std_logic_vector (17 DOWNTO 0);
+	in4: std_logic_vector (17 DOWNTO 0);
+);
+End dadda_tree_18x5
+
+Architecture structural of dadda_tree_18x5 is
+
+	type partial_products is array (4 DOWNTO 0) of (17 DOWNTO 0);
+	type partial_products is array (4 DOWNTO 0) of (17 DOWNTO 0);
+	signal 
+
+BEGIN
+
+
+END structural;

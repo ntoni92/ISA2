@@ -1,0 +1,751 @@
+|dadda_tree_18x5_ext
+in0[0] => out0[0].DATAIN
+in0[1] => out0[1].DATAIN
+in0[2] => out0[2].DATAIN
+in0[3] => out0[3].DATAIN
+in0[4] => halfadd:level1to0:4:level1to0_ha_low_cond:level1to0_ha.B
+in0[5] => fulladd:level1to0:5:level1to0_fa_cond:level1to0_fa.Cin
+in0[6] => halfadd:level2to1:6:level2to1_ha_cond:level2to1_ha.B
+in0[7] => fulladd:level2to1:7:level2to1_fa_cond:level2to1_fa.Cin
+in0[8] => compressor_53:level2to1:8:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[9] => compressor_53:level2to1:9:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[10] => compressor_53:level2to1:10:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[11] => compressor_53:level2to1:11:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[12] => compressor_53:level2to1:12:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[13] => compressor_53:level2to1:13:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[14] => compressor_53:level2to1:14:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[15] => compressor_53:level2to1:15:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[16] => compressor_53:level2to1:16:level2to1_53_cond:level2to1_53.CARRY_IN
+in0[17] => compressor_53:level2to1:17:level2to1_53_cond:level2to1_53.CARRY_IN
+in1[0] => out1[0].DATAIN
+in1[1] => out1[1].DATAIN
+in1[2] => out1[2].DATAIN
+in1[3] => out1[3].DATAIN
+in1[4] => halfadd:level1to0:4:level1to0_ha_low_cond:level1to0_ha.A
+in1[5] => fulladd:level1to0:5:level1to0_fa_cond:level1to0_fa.y
+in1[6] => halfadd:level2to1:6:level2to1_ha_cond:level2to1_ha.A
+in1[7] => fulladd:level2to1:7:level2to1_fa_cond:level2to1_fa.y
+in1[8] => compressor_53:level2to1:8:level2to1_53_cond:level2to1_53.D
+in1[9] => compressor_53:level2to1:9:level2to1_53_cond:level2to1_53.D
+in1[10] => compressor_53:level2to1:10:level2to1_53_cond:level2to1_53.D
+in1[11] => compressor_53:level2to1:11:level2to1_53_cond:level2to1_53.D
+in1[12] => compressor_53:level2to1:12:level2to1_53_cond:level2to1_53.D
+in1[13] => compressor_53:level2to1:13:level2to1_53_cond:level2to1_53.D
+in1[14] => compressor_53:level2to1:14:level2to1_53_cond:level2to1_53.D
+in1[15] => compressor_53:level2to1:15:level2to1_53_cond:level2to1_53.D
+in1[16] => compressor_53:level2to1:16:level2to1_53_cond:level2to1_53.D
+in1[17] => compressor_53:level2to1:17:level2to1_53_cond:level2to1_53.D
+in2[0] => ~NO_FANOUT~
+in2[1] => ~NO_FANOUT~
+in2[2] => ~NO_FANOUT~
+in2[3] => ~NO_FANOUT~
+in2[4] => out1[4].DATAIN
+in2[5] => fulladd:level1to0:5:level1to0_fa_cond:level1to0_fa.x
+in2[6] => fulladd:level1to0:6:level1to0_fa_cond:level1to0_fa.y
+in2[7] => fulladd:level2to1:7:level2to1_fa_cond:level2to1_fa.x
+in2[8] => compressor_53:level2to1:8:level2to1_53_cond:level2to1_53.C
+in2[9] => compressor_53:level2to1:9:level2to1_53_cond:level2to1_53.C
+in2[10] => compressor_53:level2to1:10:level2to1_53_cond:level2to1_53.C
+in2[11] => compressor_53:level2to1:11:level2to1_53_cond:level2to1_53.C
+in2[12] => compressor_53:level2to1:12:level2to1_53_cond:level2to1_53.C
+in2[13] => compressor_53:level2to1:13:level2to1_53_cond:level2to1_53.C
+in2[14] => compressor_53:level2to1:14:level2to1_53_cond:level2to1_53.C
+in2[15] => compressor_53:level2to1:15:level2to1_53_cond:level2to1_53.C
+in2[16] => compressor_53:level2to1:16:level2to1_53_cond:level2to1_53.C
+in2[17] => compressor_53:level2to1:17:level2to1_53_cond:level2to1_53.C
+in3[0] => ~NO_FANOUT~
+in3[1] => ~NO_FANOUT~
+in3[2] => ~NO_FANOUT~
+in3[3] => ~NO_FANOUT~
+in3[4] => ~NO_FANOUT~
+in3[5] => ~NO_FANOUT~
+in3[6] => fulladd:level1to0:6:level1to0_fa_cond:level1to0_fa.x
+in3[7] => fulladd:level1to0:7:level1to0_fa_cond:level1to0_fa.x
+in3[8] => compressor_53:level2to1:8:level2to1_53_cond:level2to1_53.B
+in3[9] => compressor_53:level2to1:9:level2to1_53_cond:level2to1_53.B
+in3[10] => compressor_53:level2to1:10:level2to1_53_cond:level2to1_53.B
+in3[11] => compressor_53:level2to1:11:level2to1_53_cond:level2to1_53.B
+in3[12] => compressor_53:level2to1:12:level2to1_53_cond:level2to1_53.B
+in3[13] => compressor_53:level2to1:13:level2to1_53_cond:level2to1_53.B
+in3[14] => compressor_53:level2to1:14:level2to1_53_cond:level2to1_53.B
+in3[15] => compressor_53:level2to1:15:level2to1_53_cond:level2to1_53.B
+in3[16] => compressor_53:level2to1:16:level2to1_53_cond:level2to1_53.B
+in3[17] => compressor_53:level2to1:17:level2to1_53_cond:level2to1_53.B
+in4[0] => ~NO_FANOUT~
+in4[1] => ~NO_FANOUT~
+in4[2] => ~NO_FANOUT~
+in4[3] => ~NO_FANOUT~
+in4[4] => ~NO_FANOUT~
+in4[5] => ~NO_FANOUT~
+in4[6] => ~NO_FANOUT~
+in4[7] => ~NO_FANOUT~
+in4[8] => compressor_53:level2to1:8:level2to1_53_cond:level2to1_53.A
+in4[9] => compressor_53:level2to1:9:level2to1_53_cond:level2to1_53.A
+in4[10] => compressor_53:level2to1:10:level2to1_53_cond:level2to1_53.A
+in4[11] => compressor_53:level2to1:11:level2to1_53_cond:level2to1_53.A
+in4[12] => compressor_53:level2to1:12:level2to1_53_cond:level2to1_53.A
+in4[13] => compressor_53:level2to1:13:level2to1_53_cond:level2to1_53.A
+in4[14] => compressor_53:level2to1:14:level2to1_53_cond:level2to1_53.A
+in4[15] => compressor_53:level2to1:15:level2to1_53_cond:level2to1_53.A
+in4[16] => compressor_53:level2to1:16:level2to1_53_cond:level2to1_53.A
+in4[17] => compressor_53:level2to1:17:level2to1_53_cond:level2to1_53.A
+out0[0] <= in0[0].DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in0[1].DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= in0[2].DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= in0[3].DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= halfadd:level1to0:4:level1to0_ha_low_cond:level1to0_ha.SUM
+out0[5] <= halfadd:level1to0:4:level1to0_ha_low_cond:level1to0_ha.CARRY
+out0[6] <= fulladd:level1to0:5:level1to0_fa_cond:level1to0_fa.Cout
+out0[7] <= fulladd:level1to0:6:level1to0_fa_cond:level1to0_fa.Cout
+out0[8] <= fulladd:level1to0:7:level1to0_fa_cond:level1to0_fa.Cout
+out0[9] <= fulladd:level1to0:8:level1to0_fa_cond:level1to0_fa.Cout
+out0[10] <= fulladd:level1to0:9:level1to0_fa_cond:level1to0_fa.Cout
+out0[11] <= fulladd:level1to0:10:level1to0_fa_cond:level1to0_fa.Cout
+out0[12] <= fulladd:level1to0:11:level1to0_fa_cond:level1to0_fa.Cout
+out0[13] <= fulladd:level1to0:12:level1to0_fa_cond:level1to0_fa.Cout
+out0[14] <= fulladd:level1to0:13:level1to0_fa_cond:level1to0_fa.Cout
+out0[15] <= fulladd:level1to0:14:level1to0_fa_cond:level1to0_fa.Cout
+out0[16] <= fulladd:level1to0:15:level1to0_fa_cond:level1to0_fa.Cout
+out0[17] <= fulladd:level1to0:16:level1to0_fa_cond:level1to0_fa.Cout
+out0[18] <= fulladd:level1to0:17:level1to0_fa_cond:level1to0_fa.Cout
+out0[19] <= fulladd:level1to0:18:level1to0_fa_cond:level1to0_fa.Cout
+out1[0] <= in1[0].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1[1].DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= in1[2].DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= in1[3].DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= in2[4].DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= fulladd:level1to0:5:level1to0_fa_cond:level1to0_fa.s
+out1[6] <= fulladd:level1to0:6:level1to0_fa_cond:level1to0_fa.s
+out1[7] <= fulladd:level1to0:7:level1to0_fa_cond:level1to0_fa.s
+out1[8] <= fulladd:level1to0:8:level1to0_fa_cond:level1to0_fa.s
+out1[9] <= fulladd:level1to0:9:level1to0_fa_cond:level1to0_fa.s
+out1[10] <= fulladd:level1to0:10:level1to0_fa_cond:level1to0_fa.s
+out1[11] <= fulladd:level1to0:11:level1to0_fa_cond:level1to0_fa.s
+out1[12] <= fulladd:level1to0:12:level1to0_fa_cond:level1to0_fa.s
+out1[13] <= fulladd:level1to0:13:level1to0_fa_cond:level1to0_fa.s
+out1[14] <= fulladd:level1to0:14:level1to0_fa_cond:level1to0_fa.s
+out1[15] <= fulladd:level1to0:15:level1to0_fa_cond:level1to0_fa.s
+out1[16] <= fulladd:level1to0:16:level1to0_fa_cond:level1to0_fa.s
+out1[17] <= fulladd:level1to0:17:level1to0_fa_cond:level1to0_fa.s
+out1[18] <= fulladd:level1to0:18:level1to0_fa_cond:level1to0_fa.s
+out1[19] <= fulladd:level1to0:18:level1to0_fa_cond:level1to0_fa.s
+
+
+|dadda_tree_18x5_ext|halfadd:\level2to1:6:level2to1_ha_cond:level2to1_ha
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level2to1:7:level2to1_fa_cond:level2to1_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:8:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:8:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:8:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:9:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:9:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:9:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:10:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:10:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:10:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:11:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:11:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:11:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:12:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:12:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:12:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:13:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:13:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:13:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:14:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:14:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:14:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:15:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:15:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:15:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:16:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:16:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:16:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:17:level2to1_53_cond:level2to1_53
+A => fulladd:f1.x
+B => fulladd:f1.y
+C => fulladd:f1.Cin
+D => fulladd:f2.y
+CARRY_IN => fulladd:f2.Cin
+SUM0 <= fulladd:f2.s
+SUM1 <= fulladd:f2.Cout
+CARRY_OUT <= fulladd:f1.Cout
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:17:level2to1_53_cond:level2to1_53|fulladd:f1
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|compressor_53:\level2to1:17:level2to1_53_cond:level2to1_53|fulladd:f2
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|halfadd:\level1to0:4:level1to0_ha_low_cond:level1to0_ha
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:5:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:6:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:7:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:8:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:9:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:10:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:11:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:12:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:13:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:14:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:15:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:16:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:17:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dadda_tree_18x5_ext|fulladd:\level1to0:18:level1to0_fa_cond:level1to0_fa
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
