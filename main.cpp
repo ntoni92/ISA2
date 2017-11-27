@@ -68,77 +68,56 @@ int main()
             fprintf(fp,"\t);\n");
             fprintf(fp,"END COMPONENT;\n\n");
         }
-        /*
-        if( i == 0 )
-        {
-            fprintf(fp,"COMPONENT GP_Gen IS\n");
-            fprintf(fp,"\tPORT(\n");
-            fprintf(fp,"\t\ta : IN STD_LOGIC;\n");
-            fprintf(fp,"\t\tb : IN STD_LOGIC;\n");
-            fprintf(fp,"\t\tGout : OUT STD_LOGIC;\n");
-            fprintf(fp,"\t\tPout : OUT STD_LOGIC\n");
-            fprintf(fp,"\t);\n");
-            fprintf(fp,"END COMPONENT;\n\n");
 
-            fprintf(fp,"COMPONENT FA IS\n");
-            fprintf(fp,"\tPORT(\n");
-            fprintf(fp,"\t\ta : IN STD_LOGIC;\n");
-            fprintf(fp,"\t\tb : IN STD_LOGIC;\n");
-            fprintf(fp,"\t\tc_in : IN STD_LOGIC;\n");
-            fprintf(fp,"\t\tsum : OUT STD_LOGIC;\n");
-            fprintf(fp,"\t\tc_out : OUT STD_LOGIC\n");
-            fprintf(fp,"\t);\n");
-            fprintf(fp,"END COMPONENT;\n\n");
-        }
-        */
+        // BEGIN OF ARCHITECTURE
         fprintf(fp,"BEGIN\n\n");
-        /*
-        fprintf(fp,"\tSIGNAL G_array : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL P_array : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
+
+        // SIGNALS
+        fprintf(fp,"\tSIGNAL Gin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+
+        fprintf(fp,"\tSIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+
+        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
         fprintf(fp,"\n");
-        fprintf(fp,"\tGP_comp: FOR i IN 0 TO (N-1) GENERATE\n");
-        fprintf(fp,"\t\tGP_Gen PORT MAP(\n");
-        fprintf(fp,"\t\t\tA => A(i),\n");
-        fprintf(fp,"\t\t\tb => B(i),\n");
-        fprintf(fp,"\t\t\tGout => G_array(i),\n");
-        fprintf(fp,"\t\t\tPout => P_array(i)\n");
-        fprintf(fp,"\t\t);\n");
-        fprintf(fp,"\tEND GENERATE;\n\n");
-        */
 
-        fprintf(fp,"\tSIGNAL Gin_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL Pin_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-
-        //fprintf(fp,"\tFirst_Row_AMP_OP:FOR i IN 0 TO N-1 GENERATE\n");
-        //fprintf(fp,"\t\t AMP_OP_Gen: IF ((2*i)+1)<N GENERATE\n");
         j = 0;
         while(2*j+1 < N_BK)
         {
-            fprintf(fp,"\n");
             fprintf(fp,"\tAMP_OP_%d: AMPERSAND PORT MAP(\n",2*j+1);
             fprintf(fp,"\t\tGin0 => G_in(%d),\n", 2*j);
             fprintf(fp,"\t\tPin0 => P_in(%d),\n", 2*j);
             fprintf(fp,"\t\tGin1 => G_in(%d),\n", 2*j+1);
             fprintf(fp,"\t\tPin1 => P_in(%d)\n", 2*j+1);
-            fprintf(fp,"\t\tGout => Gin_lv2(%d),\n", 2*j+1);
-            fprintf(fp,"\t\tPout => Pin_lv2((%d),\n", 2*j+1);
+            fprintf(fp,"\t\tGout => Gin_lv2(%d),\n", j);
+            fprintf(fp,"\t\tPout => Pin_lv2((%d),\n", j);
             fprintf(fp,"\t);\n");
+            fprintf(fp,"\n");
 
             j++;
         }
-
         fprintf(fp,"\n");
 
         j = 0;
         while(2*j < N_BK)
         {
-            fprintf(fp,"\tGin_lv2(%d) <= G_in(%d);\n", 2*j,2*j);
-            fprintf(fp,"\tPin_lv2(%d) <= P_in(%d);\n",2*j,2*j);
+            fprintf(fp,"\tGout_lv2(%d) <= G_in(%d);\n", 2*j,2*j);
+            fprintf(fp,"\tPout_lv2(%d) <= P_in(%d);\n",2*j,2*j);
 
             j++;
         }
-
         fprintf(fp,"\n");
+
+        fprintf(fp,"\tBK_N/2: BK_%dbit PORT MAP(\n", N_BK/2);
+        fprintf(fp,"\t\tG_in => Gin_lv2,\n");
+        fprintf(fp,"\t\tP_in => Pin_lv2,\n");
+        fprintf(fp,"\t\tG_out => Gout_lv2,\n");
+        fprintf(fp,"\t\tP_out => Pout_lv2\n");
+        fprintf(fp,"\t);\n");
+        fprintf(fp,"\n");
+
         fprintf(fp,"END struct;\n");
 
         fclose(fp);
