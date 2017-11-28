@@ -1,3 +1,7 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
 ENTITY BK_9bit IS
 	GENERIC(N: INTEGER := 9);
 	PORT(
@@ -9,6 +13,13 @@ ENTITY BK_9bit IS
 END ENTITY;
 
 ARCHITECTURE struct OF BK_9bit IS
+
+	SIGNAL Gin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
+	SIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
+	SIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
+	SIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
+	SIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 
 COMPONENT AMPERSAND IS
 	PORT(
@@ -33,79 +44,72 @@ END COMPONENT;
 
 BEGIN
 
-	SIGNAL Gin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
-	SIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
-	SIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
-	SIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
-	SIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-	SIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-
 	AMP_OP_1: AMPERSAND PORT MAP(
 		Gin0 => G_in(0),
 		Pin0 => P_in(0),
 		Gin1 => G_in(1),
-		Pin1 => P_in(1)
+		Pin1 => P_in(1),
 		Gout => Gin_lv2(0),
-		Pout => Pin_lv2(0),
+		Pout => Pin_lv2(0)
 	);
 	AMP_OP_2: AMPERSAND PORT MAP(
 		Gin0 => GoutBK_lv2(0),
-		Pin0 => PoutBK(0),
+		Pin0 => PoutBK_lv2(0),
 		Gin1 => G_in(2),
-		Pin1 => P_in(2)
+		Pin1 => P_in(2),
 		Gout => Gout_lv2(0),
-		Pout => Pout_lv2(0),
+		Pout => Pout_lv2(0)
 	);
 
 	AMP_OP_3: AMPERSAND PORT MAP(
 		Gin0 => G_in(2),
 		Pin0 => P_in(2),
 		Gin1 => G_in(3),
-		Pin1 => P_in(3)
+		Pin1 => P_in(3),
 		Gout => Gin_lv2(1),
-		Pout => Pin_lv2(1),
+		Pout => Pin_lv2(1)
 	);
 	AMP_OP_4: AMPERSAND PORT MAP(
 		Gin0 => GoutBK_lv2(1),
-		Pin0 => PoutBK(1),
+		Pin0 => PoutBK_lv2(1),
 		Gin1 => G_in(4),
-		Pin1 => P_in(4)
+		Pin1 => P_in(4),
 		Gout => Gout_lv2(1),
-		Pout => Pout_lv2(1),
+		Pout => Pout_lv2(1)
 	);
 
 	AMP_OP_5: AMPERSAND PORT MAP(
 		Gin0 => G_in(4),
 		Pin0 => P_in(4),
 		Gin1 => G_in(5),
-		Pin1 => P_in(5)
+		Pin1 => P_in(5),
 		Gout => Gin_lv2(2),
-		Pout => Pin_lv2(2),
+		Pout => Pin_lv2(2)
 	);
 	AMP_OP_6: AMPERSAND PORT MAP(
 		Gin0 => GoutBK_lv2(2),
-		Pin0 => PoutBK(2),
+		Pin0 => PoutBK_lv2(2),
 		Gin1 => G_in(6),
-		Pin1 => P_in(6)
+		Pin1 => P_in(6),
 		Gout => Gout_lv2(2),
-		Pout => Pout_lv2(2),
+		Pout => Pout_lv2(2)
 	);
 
 	AMP_OP_7: AMPERSAND PORT MAP(
 		Gin0 => G_in(6),
 		Pin0 => P_in(6),
 		Gin1 => G_in(7),
-		Pin1 => P_in(7)
+		Pin1 => P_in(7),
 		Gout => Gin_lv2(3),
-		Pout => Pin_lv2(3),
+		Pout => Pin_lv2(3)
 	);
 	AMP_OP_8: AMPERSAND PORT MAP(
 		Gin0 => GoutBK_lv2(3),
-		Pin0 => PoutBK(3),
+		Pin0 => PoutBK_lv2(3),
 		Gin1 => G_in(8),
-		Pin1 => P_in(8)
+		Pin1 => P_in(8),
 		Gout => Gout_lv2(3),
-		Pout => Pout_lv2(3),
+		Pout => Pout_lv2(3)
 	);
 
 	G_out(0) <= G_in(0);
