@@ -31,6 +31,10 @@ int main(){
 		*/
 
         fp = fopen(nome_file, "w");
+        fprintf(fp,"library ieee;\n");
+        fprintf(fp,"use ieee.std_logic_1164.all;\n");
+        fprintf(fp,"\n\n");
+
         fprintf(fp,"ENTITY BK_%dbit IS\n", N_BK);
         fprintf(fp,"\tGENERIC(N: INTEGER := %d);\n", N_BK);
         fprintf(fp,"\tPORT(\n");
@@ -42,6 +46,16 @@ int main(){
         fprintf(fp,"END ENTITY;\n\n");
 
         fprintf(fp,"ARCHITECTURE struct OF BK_%dbit IS\n\n", N_BK);
+
+        fprintf(fp,"\tSIGNAL Gin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+
+        fprintf(fp,"\tSIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+
+        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
+        fprintf(fp,"\n");
 
         fprintf(fp,"COMPONENT AMPERSAND IS\n");
         fprintf(fp,"\tPORT(\n");
@@ -70,15 +84,6 @@ int main(){
         fprintf(fp,"BEGIN\n\n");
 
         // SIGNALS
-        fprintf(fp,"\tSIGNAL Gin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-
-        fprintf(fp,"\tSIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-
-        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\n");
 
         for(j=1; j<N_BK; j++){
             if(j%2){
@@ -86,19 +91,19 @@ int main(){
                 fprintf(fp,"\t\tGin0 => G_in(%d),\n", j-1);
                 fprintf(fp,"\t\tPin0 => P_in(%d),\n", j-1);
                 fprintf(fp,"\t\tGin1 => G_in(%d),\n", j);
-                fprintf(fp,"\t\tPin1 => P_in(%d)\n", j);
+                fprintf(fp,"\t\tPin1 => P_in(%d),\n", j);
                 fprintf(fp,"\t\tGout => Gin_lv2(%d),\n", (j-1)/2);
-                fprintf(fp,"\t\tPout => Pin_lv2(%d),\n", (j-1)/2);
+                fprintf(fp,"\t\tPout => Pin_lv2(%d)\n", (j-1)/2);
                 fprintf(fp,"\t);\n");
             }
             else{
                 fprintf(fp,"\tAMP_OP_%d: AMPERSAND PORT MAP(\n", j);
                 fprintf(fp,"\t\tGin0 => GoutBK_lv2(%d),\n", (j-2)/2);
-                fprintf(fp,"\t\tPin0 => PoutBK(%d),\n", (j-2)/2);
+                fprintf(fp,"\t\tPin0 => PoutBK_lv2(%d),\n", (j-2)/2);
                 fprintf(fp,"\t\tGin1 => G_in(%d),\n", j);
-                fprintf(fp,"\t\tPin1 => P_in(%d)\n", j);
+                fprintf(fp,"\t\tPin1 => P_in(%d),\n", j);
                 fprintf(fp,"\t\tGout => Gout_lv2(%d),\n", (j-2)/2);
-                fprintf(fp,"\t\tPout => Pout_lv2(%d),\n", (j-2)/2);
+                fprintf(fp,"\t\tPout => Pout_lv2(%d)\n", (j-2)/2);
                 fprintf(fp,"\t);\n");
                 fprintf(fp,"\n");
             }
@@ -127,8 +132,8 @@ int main(){
             }
         }
         else{
-            fprintf(fp,"\tGout(%d) <= Gin_lv2(%d);\n", 1, 0);
-            fprintf(fp,"\tPout(%d) <= Pin_lv2(%d);\n", 1, 0);
+            fprintf(fp,"\tG_out(%d) <= Gin_lv2(%d);\n", 1, 0);
+            fprintf(fp,"\tP_out(%d) <= Pin_lv2(%d);\n", 1, 0);
         }
 
         fprintf(fp,"END struct;\n");
