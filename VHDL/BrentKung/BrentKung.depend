@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1511804713 source:c:\users\anton\desktop\codesign\homeworks 2017\hw2\brentkung\main.cpp
+	<iostream>
+	<stdio.h>
+	<cmath>
+	<cstring>
+	<string>
+
+1511860216 source:c:\users\anton\desktop\isa\labs1718\isa_lab2\vhdl\brentkung\main.cpp
+	<iostream>
+	<stdio.h>
+	<cmath>
+	<cstring>
+	<string>
+
