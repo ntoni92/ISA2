@@ -7,8 +7,9 @@ ENTITY PP_ADDER IS
 	PORT(
 		a: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 		b: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-		c0: IN STD_LOGIC;
-		sum: OUT STD_LOGIC_VECTOR(N DOWNTO 0)
+		cin: IN STD_LOGIC;
+		cout: OUT STD_LOGIC;
+		sum: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
 	);
 END ENTITY;
 
@@ -54,7 +55,8 @@ ARCHITECTURE struct OF PP_ADDER IS
 			b: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 			c0: IN STD_LOGIC;
 			Cin: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-			sum: OUT STD_LOGIC_VECTOR(N DOWNTO 0)  --the last element is the last one carry
+			cout: OUT STD_LOGIC;
+			sum: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)  --the last element is the last one carry
 		);
 	END COMPONENT;
 BEGIN
@@ -73,13 +75,14 @@ BEGIN
 	CARRYunit: CARRY_UNIT	GENERIC MAP(N => N)
 							PORT MAP(	G => GBK_out_sig,
 										P => PBK_out_sig,
-										c0 => c0,
+										c0 => cin,
 										carry => carry_sig);
 										
 	FAunit: FA_ARRAY 	GENERIC MAP(N => N)
 						PORT MAP(	a => a,
 									b => b,
-									c0 => c0,
+									c0 => cin,
 									Cin => carry_sig,
+									cout => cout,
 									sum => sum);	
 END ARCHITECTURE;

@@ -9,7 +9,8 @@ ENTITY FA_ARRAY IS
 		b: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 		c0: IN STD_LOGIC;
 		Cin: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-		sum: OUT STD_LOGIC_VECTOR(N DOWNTO 0)  --the last element is the last one carry
+		cout: OUT STD_LOGIC;
+		sum: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)  --the last element is the last one carry
 	);
 END ENTITY;
 
@@ -31,5 +32,5 @@ BEGIN
 								sum => sum(i));
 	END GENERATE;
 	
-	sum(N) <= carry_vector(N);
+	cout <= carry_vector(N);
 END struct;

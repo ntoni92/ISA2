@@ -10,5 +10,5 @@ END ENTITY;
 ARCHITECTURE beh OF FULLADD IS
 BEGIN
 sum <= a XOR b XOR Cin ;
-Cout <= (a AND b) OR (Cin AND b) OR (Cin AND b) ;
+Cout <= (a AND b) OR (Cin AND a) OR (Cin AND b) ;
 END beh ;
