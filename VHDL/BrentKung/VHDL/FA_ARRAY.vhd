@@ -16,6 +16,8 @@ END ENTITY;
 
 ARCHITECTURE struct OF FA_ARRAY IS
 	SIGNAL carry_vector: STD_LOGIC_VECTOR(N DOWNTO 0);
+	SIGNAL sel: STD_LOGIC;
+	SIGNAL sum_sig: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 
 	COMPONENT FULLADD IS
 	PORT (    
@@ -29,8 +31,11 @@ BEGIN
 		FA: FULLADD PORT MAP(	Cin => carry_vector(i),
 								a => a(i),
 								b => b(i),
-								sum => sum(i));
+								sum => sum_sig(i));
 	END GENERATE;
 	
-	cout <= carry_vector(N);
-END struct;
+	sum <= sum_sig;
+	sel <= a(N-1) XOR b(N-1);
+	
+	cout <= sum_sig(N-1) WHEN (sel = '1') ELSE carry_vector(N);
+END ARCHITECTURE;
