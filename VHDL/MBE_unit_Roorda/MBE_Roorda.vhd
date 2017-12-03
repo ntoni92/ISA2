@@ -16,7 +16,7 @@ ARCHITECTURE beh_mbe OF MBE_Roorda IS
 
 	SIGNAL B_mbe: STD_LOGIC_VECTOR(Nb+1 DOWNTO 0);
 	
-	COMPONENT cell IS
+	COMPONENT cell_Roorda IS
 	GENERIC(	Nb: INTEGER := 9;
 				shift: INTEGER := 2
 	);

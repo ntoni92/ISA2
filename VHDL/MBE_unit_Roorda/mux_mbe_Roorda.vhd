@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
-ENTITY mux_mbe IS
+ENTITY mux_mbe_Roorda IS
 	GENERIC(Nb: INTEGER := 9);
 	PORT(	sel: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 			A: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
@@ -10,7 +10,7 @@ ENTITY mux_mbe IS
 	);
 END ENTITY;
 
-ARCHITECTURE beh_mux_mbe OF mux_mbe IS	
+ARCHITECTURE beh_mux_mbe OF mux_mbe_Roorda IS	
 	SIGNAL A1, A2, A1_n, A2_n: STD_LOGIC_VECTOR(Nb DOWNTO 0);
 	
 BEGIN

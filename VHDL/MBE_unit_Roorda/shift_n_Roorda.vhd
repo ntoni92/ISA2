@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
-ENTITY shift_n IS
+ENTITY shift_n_Roorda IS
 	GENERIC(	Nb: INTEGER := 9;
 				shift: INTEGER := 2
 	);
@@ -11,7 +11,7 @@ ENTITY shift_n IS
 	);
 END ENTITY;
 
-ARCHITECTURE beh_shift OF shift_n IS
+ARCHITECTURE beh_shift OF shift_n_Roorda IS
 
 BEGIN
 	data_out(shift-1 DOWNTO 0) <= (OTHERS => '0');
