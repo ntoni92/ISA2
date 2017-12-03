@@ -16,7 +16,7 @@ ARCHITECTURE test OF tb_mux_MBE IS
 	
 	SIGNAL rand_num: INTEGER := 0;
 	
-	COMPONENT mux_MBE IS
+	COMPONENT mux_MBE_Roorda IS
 	GENERIC(
 		Nb: INTEGER := 9
 	);
@@ -28,7 +28,7 @@ ARCHITECTURE test OF tb_mux_MBE IS
 	
 BEGIN
 	
-	UUT: mux_MBE GENERIC MAP(Nb => 9)
+	UUT: mux_MBE_Roorda GENERIC MAP(Nb => 9)
 					PORT MAP(sel => sel, A => A_tb, mux_out => mux_out);
 					
 	reset_PROCESS: PROCESS
