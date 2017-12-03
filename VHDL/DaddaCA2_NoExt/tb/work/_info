@@ -1,0 +1,209 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/meaep/Desktop/MBE_dadda_mult/tb
+Ecompressor_53
+Z0 w1511612552
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/tb
+Z4 8C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/compressor_53.vhd
+Z5 FC:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/compressor_53.vhd
+l0
+L4
+VNgOXUhhcmoWdgh;P3URBV2
+!s100 joVf35[Gm=D=RiJjER_nW3
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1512327631
+!i10b 1
+Z8 !s108 1512327631.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/compressor_53.vhd|
+Z10 !s107 C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/compressor_53.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R1
+R2
+DEx4 work 13 compressor_53 0 22 NgOXUhhcmoWdgh;P3URBV2
+l18
+L9
+VcA:Ac776B[5iK<4:F0B>^2
+!s100 d0I9GMU37eA;5Q52;SmNj2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edadda_tree_18x6_noext
+Z13 w1512325776
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z15 8C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/dadda_tree_18x6_NoExt.vhd
+Z16 FC:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/dadda_tree_18x6_NoExt.vhd
+l0
+L5
+VYNa`dMDDVeoiXO=HbheNI1
+!s100 fdg_AiEX:NE;zhReQ543I1
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/dadda_tree_18x6_NoExt.vhd|
+Z18 !s107 C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/dadda_tree_18x6_NoExt.vhd|
+!i113 1
+R11
+R12
+Astructural
+R14
+R1
+R2
+DEx4 work 21 dadda_tree_18x6_noext 0 22 YNa`dMDDVeoiXO=HbheNI1
+l44
+L18
+V^c6T4D<NZDWZhn3Tbj8bU3
+!s100 lhGZ]n;OYaI?Y6QOSUk662
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Efulladd
+Z19 w1511543385
+R1
+R2
+R3
+Z20 8C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/fulladd.vhd
+Z21 FC:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/fulladd.vhd
+l0
+L4
+VYU9aE0HQ9=Bc9:nDLDTeG3
+!s100 KRnCa0KFl<OK<=>bV8Bee3
+R6
+32
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/fulladd.vhd|
+Z23 !s107 C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/fulladd.vhd|
+!i113 1
+R11
+R12
+Abeh
+R1
+R2
+Z24 DEx4 work 7 fulladd 0 22 YU9aE0HQ9=Bc9:nDLDTeG3
+l11
+L10
+Z25 VRk_N>cPACP37L2H0jRZbU3
+Z26 !s100 ej4ICH=KZ>NV_GUzKFiI]0
+R6
+32
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Ehalfadd
+Z27 w1511612551
+R1
+R2
+R3
+Z28 8C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/halfadd.vhd
+Z29 FC:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/halfadd.vhd
+l0
+L4
+VQ0dUUikUoQERWjWKnR8IX3
+!s100 h[k:m<S6ik2K8UJKzED?^1
+R6
+32
+R7
+!i10b 1
+R8
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/halfadd.vhd|
+Z31 !s107 C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/halfadd.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 7 halfadd 0 22 Q0dUUikUoQERWjWKnR8IX3
+l10
+L9
+VHWP?GncNWFk>^HXV;Kbc<0
+!s100 cR6lVFQnz[0W@kIok8@P53
+R6
+32
+R7
+!i10b 1
+R8
+R30
+R31
+!i113 1
+R11
+R12
+Etb_dadda
+Z32 w1512327629
+R14
+R1
+R2
+R3
+Z33 8C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/tb/tb_dadda.vhd
+Z34 FC:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/tb/tb_dadda.vhd
+l0
+L5
+VeiTHJb[RGeHRL<Li0@2[a1
+!s100 gS=D5E6o^o2]:`e6A95`j1
+R6
+32
+R7
+!i10b 1
+R8
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/tb/tb_dadda.vhd|
+Z36 !s107 C:/Users/meaep/Desktop/dadda_tree_18x6_NoExt/tb/tb_dadda.vhd|
+!i113 1
+R11
+R12
+Atest
+R14
+R1
+R2
+DEx4 work 8 tb_dadda 0 22 eiTHJb[RGeHRL<Li0@2[a1
+l28
+L9
+Vj:P<KITYdeT>K<5KdgJH12
+!s100 H7kFg`b=J`KV>0OKN^7Xl0
+R6
+32
+R7
+!i10b 1
+R8
+R35
+R36
+!i113 1
+R11
+R12

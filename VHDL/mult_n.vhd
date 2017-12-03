@@ -17,8 +17,13 @@ enable_out: OUT STD_LOGIC
 END ENTITY;
 
 ARCHITECTURE beh_mult OF mult_n IS
-
+	
+	-- For testing multiplier alone:
+	--CONSTANT pipe_depth: INTEGER := pipe_d;
+	
+	-- For use inside filter:
 	CONSTANT pipe_depth: INTEGER := pipe_d-2;
+
 	TYPE pipe_array_type IS ARRAY(pipe_depth DOWNTO 0) OF STD_LOGIC_VECTOR(2*Nb-1 DOWNTO 0);
 
 	COMPONENT Reg_n IS
