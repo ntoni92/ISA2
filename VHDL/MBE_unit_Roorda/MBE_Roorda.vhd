@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
-ENTITY MBE IS
+ENTITY MBE_Roorda IS
 	GENERIC(	Nb: INTEGER := 9;
 				shift: INTEGER :=2
 	);
@@ -12,7 +12,7 @@ ENTITY MBE IS
 	);
 END ENTITY;
 
-ARCHITECTURE beh_mbe OF MBE IS
+ARCHITECTURE beh_mbe OF MBE_Roorda IS
 
 	SIGNAL B_mbe: STD_LOGIC_VECTOR(Nb+1 DOWNTO 0);
 	
