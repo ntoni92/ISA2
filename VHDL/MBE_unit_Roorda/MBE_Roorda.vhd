@@ -32,7 +32,7 @@ BEGIN
 	B_mbe(Nb+1) <= B(Nb-1);
 	
 	Cells_gen: FOR i IN 1 TO ((Nb+1)/2) GENERATE
-		Single_cell: cell 	GENERIC MAP(Nb => Nb, shift => (i-1)*shift)
+		Single_cell: cell_Roorda 	GENERIC MAP(Nb => Nb, shift => (i-1)*shift)
 							PORT MAP(	A => A,
 										sel => B_mbe(2*i DOWNTO 2*(i-1)),
 										PPx_out => PP_out(i*(2*Nb)-1 DOWNTO (2*Nb)*(i-1))

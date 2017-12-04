@@ -32,6 +32,7 @@ BEGIN
 				A2_n WHEN "100",
 				A1_n WHEN "101",
 				A1_n WHEN "110",
+				(OTHERS => '1') WHEN "111",
 				(OTHERS => '0') WHEN OTHERS;
 				
 END beh_mux_mbe;

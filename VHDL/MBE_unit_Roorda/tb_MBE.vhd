@@ -21,7 +21,7 @@ ARCHITECTURE test OF tb_MBE IS
 	
 	SIGNAL PP_array: part_prod;
 	
-	COMPONENT MBE IS
+	COMPONENT MBE_Roorda IS
 	GENERIC(	Nb: INTEGER := 9;
 				shift: INTEGER :=2
 	);
@@ -33,7 +33,7 @@ ARCHITECTURE test OF tb_MBE IS
 	
 BEGIN
 	
-	UUT: MBE 	GENERIC MAP(Nb => Nb, shift => shift)
+	UUT: MBE_Roorda 	GENERIC MAP(Nb => Nb, shift => shift)
 				PORT MAP(A => A_tb, B => B_tb, PP_out => PP_out);
 				
 	reset_PROCESS: PROCESS
