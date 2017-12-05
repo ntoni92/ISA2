@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Dec 03 19:31:51 2017
+Fitter Status : Successful - Wed Dec 06 00:21:39 2017
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : MBE_dadda_mult_9x9
 Top-level Entity Name : MBE_dadda_mult_9x9
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 102 / 56,480 ( < 1 % )
+Logic utilization (in ALMs) : 52 / 56,480 ( < 1 % )
 Total registers : 0
 Total pins : 36 / 268 ( 13 % )
 Total virtual pins : 0

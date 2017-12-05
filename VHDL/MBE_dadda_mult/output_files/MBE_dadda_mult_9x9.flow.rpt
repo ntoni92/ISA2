@@ -1,5 +1,5 @@
 Flow report for MBE_dadda_mult_9x9
-Sun Dec 03 19:32:12 2017
+Wed Dec 06 00:22:01 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Dec 03 19:32:03 2017       ;
+; Flow Status                     ; Successful - Wed Dec 06 00:21:53 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; MBE_dadda_mult_9x9                          ;
 ; Top-level Entity Name           ; MBE_dadda_mult_9x9                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 102 / 56,480 ( < 1 % )                      ;
+; Logic utilization (in ALMs)     ; 52 / 56,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 36 / 268 ( 13 % )                           ;
 ; Total virtual pins              ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/03/2017 19:30:54 ;
+; Start date & time ; 12/06/2017 00:20:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MBE_dadda_mult_9x9  ;
 +-------------------+---------------------+
@@ -79,12 +79,14 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 114379635308153.151232585413224        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 114379635308153.151251604109444        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
@@ -94,11 +96,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 774 MB              ; 00:00:31                           ;
-; Fitter                    ; 00:00:42     ; 1.0                     ; 2684 MB             ; 00:01:14                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 749 MB              ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.1                     ; 1108 MB             ; 00:00:08                           ;
-; Total                     ; 00:01:15     ; --                      ; --                  ; 00:02:03                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 780 MB              ; 00:00:30                           ;
+; Fitter                    ; 00:00:43     ; 1.0                     ; 2688 MB             ; 00:01:11                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 751 MB              ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.1                     ; 1105 MB             ; 00:00:07                           ;
+; Total                     ; 00:01:16     ; --                      ; --                  ; 00:01:58                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
