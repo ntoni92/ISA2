@@ -10,7 +10,6 @@ ARCHITECTURE test OF tb_dadda_mult_basic IS
 
 SIGNAL A,B: std_logic_vector(8 DOWNTO 0);
 SIGNAL m_out: std_logic_vector(17 DOWNTO 0);
-SIGNAL SUM: INTEGER;
 
 component MBE_dadda_mult_9x9 IS
 	Port(	A: IN STD_LOGIC_VECTOR(8 DOWNTO 0);
@@ -21,7 +20,7 @@ END component;
 
 BEGIN
 	
-DUT: 	ENTITY work.MBE_dadda_mult_9x9(NoExt)
+DUT: 	ENTITY work.MBE_dadda_mult_9x9(approx)
 	PORT MAP(	A => A, 
 			B => B,
 			m_out => m_out);
