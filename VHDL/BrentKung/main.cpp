@@ -6,7 +6,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     FILE* fp;
     int i,j,N, N_BK;
     char nome_file[20];
@@ -53,8 +54,8 @@ int main(){
         fprintf(fp,"\tSIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
         fprintf(fp,"\tSIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
 
-        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
         fprintf(fp,"\n");
 
         fprintf(fp,"COMPONENT AMPERSAND IS\n");
@@ -108,8 +109,7 @@ int main(){
                 fprintf(fp,"\n");
             }
         }
-        fprintf(fp,"\tG_out(%d) <= G_in(%d);\n", 0, 0);
-        fprintf(fp,"\tP_out(%d) <= P_in(%d);\n", 0, 0);
+
         fprintf(fp,"\n");
 
         if(i<int(log2(N))-1){
@@ -120,22 +120,30 @@ int main(){
             fprintf(fp,"\t\tP_out => PoutBK_lv2\n");
             fprintf(fp,"\t);\n");
             fprintf(fp,"\n");
-            for(j=1; j<N_BK; j++){
-                if(j%2){
-                    fprintf(fp,"\tG_out(%d) <= GoutBK_lv2(%d);\n", j, (j-1)/2);
-                    fprintf(fp,"\tP_out(%d) <= PoutBK_lv2(%d);\n", j, (j-1)/2);
-                }
-                else{
-                    fprintf(fp,"\tG_out(%d) <= Gout_lv2(%d);\n", j, (j-2)/2);
-                    fprintf(fp,"\tP_out(%d) <= Pout_lv2(%d);\n", j, (j-2)/2);
-                }
-            }
         }
         else{
-            fprintf(fp,"\tG_out(%d) <= Gin_lv2(%d);\n", 1, 0);
-            fprintf(fp,"\tP_out(%d) <= Pin_lv2(%d);\n", 1, 0);
+            fprintf(fp,"\n");
+            fprintf(fp,"GoutBK_lv2 <= Gin_lv2;\n");
+            fprintf(fp,"PoutBK_lv2 <= Pin_lv2;\n");
+            fprintf(fp,"\n");
         }
 
+        fprintf(fp, "\n");
+        fprintf(fp,"\tG_out(%d) <= G_in(%d);\n", 0, 0);
+        fprintf(fp,"\tP_out(%d) <= P_in(%d);\n", 0, 0);
+
+        for(j=1; j<N_BK; j++){
+            if(j%2){
+                fprintf(fp,"\tG_out(%d) <= GoutBK_lv2(%d);\n", j, (j-1)/2);
+                fprintf(fp,"\tP_out(%d) <= PoutBK_lv2(%d);\n", j, (j-1)/2);
+            }
+            else{
+                fprintf(fp,"\tG_out(%d) <= Gout_lv2(%d);\n", j, (j-2)/2);
+                fprintf(fp,"\tP_out(%d) <= Pout_lv2(%d);\n", j, (j-2)/2);
+            }
+        }
+
+        fprintf(fp,"\n");
         fprintf(fp,"END struct;\n");
 
         fclose(fp);
