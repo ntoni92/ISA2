@@ -1,40 +1,4 @@
-C:/Users/meaep/Desktop/MBE_dadda_mult/tb/tb_dadda_mult_basic.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\meaep\Desktop\MBE_dadda_mult\tb\tb_dadda_mult_basic.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity tb_dadda_mult_basic
--- Compiling architecture test of tb_dadda_mult_basic
--- Loading package MATH_REAL
--- Loading entity MBE_dadda_mult_9x9
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/dadda_tree_18x5_ext.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/dadda_tree_18x5_ext.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity dadda_tree_18x5_ext
--- Compiling architecture structural of dadda_tree_18x5_ext
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/halfadd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/halfadd.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity halfadd
--- Compiling architecture DATAFLOW of halfadd
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/compressor_53_approx.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/compressor_53_approx.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity compressor_53_approx
--- Compiling architecture DATAFLOW of compressor_53_approx
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/tb/tb_dadda_mult_rand.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/tb/tb_dadda_mult_rand.vhd
+C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/tb/tb_dadda_mult_rand.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/tb/tb_dadda_mult_rand.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -45,7 +9,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling architecture test of tb_dadda_mult_rand
 -- Loading entity MBE_dadda_mult_9x9
 
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/mux_mbe.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/mux_mbe.vhd
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -54,18 +18,88 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity mux_mbe
 -- Compiling architecture beh_mux_mbe of mux_mbe
 
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/dadda_tree_18x6_NoExt.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/dadda_tree_18x6_NoExt.vhd
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity dadda_tree_18x6_NoExt
--- Compiling architecture structural of dadda_tree_18x6_NoExt
--- Compiling architecture approx of dadda_tree_18x6_NoExt
--- Loading entity dadda_tree_18x6_NoExt
+-- Compiling entity cell
+-- Compiling architecture beh_cell of cell
 
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/MBE_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/MBE_Roorda.vhd
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_n_Roorda
+-- Compiling architecture beh_shift of shift_n_Roorda
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/tb/tb_dadda_mult_basic.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\meaep\Documents\GitHub\ISA2\VHDL\MBE_dadda_mult\tb\tb_dadda_mult_basic.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_dadda_mult_basic
+-- Compiling architecture test of tb_dadda_mult_basic
+-- Loading package MATH_REAL
+-- Loading entity MBE_dadda_mult_9x9
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_n
+-- Compiling architecture beh_shift of shift_n
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity MBE
+-- Compiling architecture beh_mbe of MBE
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/fulladd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/fulladd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladd
+-- Compiling architecture beh of fulladd
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity compressor_53
+-- Compiling architecture DATAFLOW of compressor_53
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity compressor_53_approx
+-- Compiling architecture DATAFLOW of compressor_53_approx
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cell_Roorda
+-- Compiling architecture beh_cell of cell_Roorda
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -74,7 +108,25 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity MBE_Roorda
 -- Compiling architecture beh_mbe of MBE_Roorda
 
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dadda_tree_18x5_ext
+-- Compiling architecture structural of dadda_tree_18x5_ext
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux_mbe_Roorda
+-- Compiling architecture beh_mux_mbe of mux_mbe_Roorda
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -88,76 +140,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity dadda_tree_18x6_NoExt
 -- Compiling architecture approx of MBE_dadda_mult_9x9
 -- Loading entity MBE_dadda_mult_9x9
+-- Compiling architecture approxCut of MBE_dadda_mult_9x9
+-- Loading entity MBE_dadda_mult_9x9
 
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/mux_mbe_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/mux_mbe_Roorda.vhd
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity mux_mbe_Roorda
--- Compiling architecture beh_mux_mbe of mux_mbe_Roorda
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/shift_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/shift_n.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity shift_n
--- Compiling architecture beh_shift of shift_n
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/fulladd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/fulladd.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity fulladd
--- Compiling architecture beh of fulladd
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/compressor_53.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/compressor_53.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity compressor_53
--- Compiling architecture DATAFLOW of compressor_53
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/MBE.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/MBE.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling entity MBE
--- Compiling architecture beh_mbe of MBE
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/cell_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/cell_Roorda.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity cell_Roorda
--- Compiling architecture beh_cell of cell_Roorda
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/cell.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/cell.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity cell
--- Compiling architecture beh_cell of cell
-
-} {} {}} C:/Users/meaep/Desktop/MBE_dadda_mult/shift_n_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Desktop/MBE_dadda_mult/shift_n_Roorda.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity shift_n_Roorda
--- Compiling architecture beh_shift of shift_n_Roorda
+-- Compiling entity halfadd
+-- Compiling architecture DATAFLOW of halfadd
 
 } {} {}}

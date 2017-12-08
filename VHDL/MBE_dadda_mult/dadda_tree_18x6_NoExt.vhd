@@ -506,23 +506,28 @@ BEGIN
 	level3(5) <= in5;
 ------------------------------------------------------------------------------------------------
 --passing through bits level3 to level2
-
+	
+	level2(0)(7) <= level3 (0)(7);
+	level2(0)(9) <= level3 (5)(9);
 	level2(0)(15) <= level3 (3)(15);
 	level2(0)(16) <= level3 (3)(16);
 	level2(0)(17) <= level3 (4)(17);
 	
+	level2(1)(7) <= level3 (1)(7);
+	level2(1)(8) <= level3 (3)(8);
 	level2(1)(14) <= level3 (2)(14);
 	level2(1)(15) <= level3 (4)(15);
 	level2(1)(16) <= level3 (4)(16);
 	level2(1)(17) <= level3 (5)(17);
 	
 	level2(2)(7) <= level3 (2)(7);
-	level2(2)(8) <= level3 (5)(8);
+	level2(2)(8) <= level3 (4)(8);
 	level2(2)(13) <= level3 (4)(13);
 	level2(2)(14) <= level3 (3)(14);
 	level2(2)(15) <= level3 (5)(15);
 
 	level2(3)(7) <= level3 (3)(7);
+	level2(3)(8) <= level3 (5)(8);
 	level2(3)(9) <= level3 (5)(9);
 	level2(3)(12) <= level3 (4)(12);
 	level2(3)(13) <= level3 (5)(13);
@@ -530,13 +535,7 @@ BEGIN
 	
 	
 --from level3 to level2 compression layer
-	level3to2: for i in 7 to 13 generate
-					level3to2_ha_low_cond: if i=7 generate
-														level3to2_ha: halfadd PORT MAP (	A => level3(1)(i),
-																							B => level3(0)(i),
-																							SUM => level2(1)(i),
-																							CARRY => level2(0)(i+1));
-													end generate level3to2_ha_low_cond;
+	level3to2: for i in 8 to 13 generate
 					level3to2_ha_up_cond: if i=13 generate
 														level3to2_ha: halfadd PORT MAP (	A => level3(3)(i),
 																							B => level3(2)(i),
@@ -550,16 +549,13 @@ BEGIN
 																					s => level2(2)(i),
 																					Cout => level2(0)(i+1));
 													end generate level3to2_fa_cond;
-					level3to2_53_cond_first: if i=8 generate
-												level3to2_53: compressor_53_approx PORT MAP (	A => level3(4)(i),
-																						B => level3(3)(i),
-																						C => level3(2)(i),
-																						D => level3(1)(i),
-																						CARRY_IN => level3(0)(i),
-																						SUM0 => level2(1)(i),
-																						SUM1 => level2(0)(i+1),
-																						CARRY_OUT => level2(1)(i+1));
-													end generate level3to2_53_cond_first;
+					level3to2_fa_first_cond: if i=8 generate
+												level3to2_fa: fulladd PORT MAP (	x => level3(3)(i),
+																					y => level3(2)(i),
+																					Cin => level3(1)(i),
+																					s => level2(0)(i),
+																					Cout => level2(1)(i+1));
+													end generate level3to2_fa_first_cond;
 					level3to2_53_cond_mid: if i>=9 and i<=10 generate
 												level3to2_53: compressor_53_approx PORT MAP (	A => level3(4)(i),
 																						B => level3(3)(i),
@@ -587,6 +583,7 @@ BEGIN
 
 	level1(0)(17) <= level2 (0)(17);
 	
+	level1(1)(7) <= level2 (2)(7);
 	level1(1)(16) <= level2 (0)(16);
 	level1(1)(17) <= level2 (1)(17);
 	
@@ -604,14 +601,20 @@ BEGIN
 
 --from level2 to level1 compression layer
 	level2to1: for i in 7 to 15 generate
-
-					level2to1_ha_mid_cond: if i=8 or i=10 or i=11 or i=15 generate
+					level2to1_ha_first_cond: if i=7 generate
+														level2to1_ha: halfadd PORT MAP (	A => level2(1)(i),
+																							B => level2(0)(i),
+																							SUM => level1(0)(i),
+																							CARRY => level1(0)(i+1));
+													end generate level2to1_ha_first_cond;
+	
+					level2to1_ha_mid_cond: if i=9 or i=10 or i=11 or i=15 generate
 														level2to1_ha: halfadd PORT MAP (	A => level2(1)(i),
 																							B => level2(0)(i),
 																							SUM => level1(1)(i),
 																							CARRY => level1(0)(i+1));
 													end generate level2to1_ha_mid_cond;
-					level2to1_fa_cond: if i=7 or i=9 or i=12 or i=13 or i=14 generate
+					level2to1_fa_cond: if i=8 or i=12 or i=13 or i=14 generate
 												level2to1_fa: fulladd PORT MAP (	x => level2(2)(i),
 																					y => level2(1)(i),
 																					Cin => level2(0)(i),
@@ -622,7 +625,7 @@ BEGIN
 	
 ------------------------------------------------------------------------------------------------
 --passing through bits level1 to level0
---none
+	level0(1)(7) <= level1 (2)(7);
 	
 
 --from level1 to level0 compression layer
@@ -633,13 +636,19 @@ BEGIN
 																							SUM => level0(1)(i),
 																							CARRY => level0(0)(i+1));
 													end generate level1to0_ha_mid_cond;
-					level1to0_fa_second_cond: if i>=7 and i<=16 generate
+					level1to0_fa_second_cond: if i>=8 and i<=16 generate
 												level1to0_fa: fulladd PORT MAP (	x => level1(2)(i),
 																					y => level1(1)(i),
 																					Cin => level1(0)(i),
 																					s => level0(1)(i),
 																					Cout => level0(0)(i+1));
 													end generate level1to0_fa_second_cond;
+					level1to0_ha_first_cond: if i=7 generate
+														level1to0_ha: halfadd PORT MAP (	A => level1(1)(i),
+																							B => level1(0)(i),
+																							SUM => level0(0)(i),
+																							CARRY => level0(0)(i+1));
+													end generate level1to0_ha_first_cond;
 					end generate level1to0;
 					
 --level0 to output

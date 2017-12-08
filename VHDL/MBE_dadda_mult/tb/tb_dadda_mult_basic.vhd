@@ -20,7 +20,7 @@ END component;
 
 BEGIN
 	
-DUT: 	ENTITY work.MBE_dadda_mult_9x9(approx)
+DUT: 	ENTITY work.MBE_dadda_mult_9x9(approxCut)
 	PORT MAP(	A => A, 
 			B => B,
 			m_out => m_out);
