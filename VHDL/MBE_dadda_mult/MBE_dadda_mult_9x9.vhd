@@ -42,16 +42,15 @@ ARCHITECTURE structural of MBE_dadda_mult_9x9 is
 		);
 	END Component;
 
-	Component adder_n IS
-	GENERIC(
-		Nb: INTEGER := 9
-	);
-	PORT(
-		in_a: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
-		in_b: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
-		sum_out: OUT STD_LOGIC_VECTOR(Nb-1 DOWNTO 0)
-	);
-	END Component;
+	COMPONENT PP_ADDER18 IS
+		PORT(
+			a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			cin: IN STD_LOGIC;
+			cout: OUT STD_LOGIC;
+			sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
+		);
+	END COMPONENT;
 	
 BEGIN
 
@@ -72,8 +71,10 @@ BEGIN
 															out1 => daddaToSum(1));
 	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
 	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
-	tree_add: adder_n GENERIC MAP (Nb => 19)
-				PORT MAP();
+	tree_add: PP_ADDER18	PORT MAP(	a => daddaToSum(0)(17 DOWNTO 0),
+						b => daddaToSum(1)(17 DOWNTO 0),
+						cin => '0',
+						sum => m_out);
 
 END structural;
 
@@ -111,6 +112,17 @@ ARCHITECTURE NoExt of MBE_dadda_mult_9x9 is
 				PP_out: OUT STD_LOGIC_VECTOR((2*Nb)*((Nb+3)/2)-1 DOWNTO 0)  --instantiate number of outputs according to the number of triplets
 		);
 	END Component;
+
+	COMPONENT PP_ADDER18 IS
+		PORT(
+			a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			cin: IN STD_LOGIC;
+			cout: OUT STD_LOGIC;
+			sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
+		);
+	END COMPONENT;
+
 	
 BEGIN
 
@@ -132,8 +144,12 @@ BEGIN
 															in5 => splitToDadda(5),
 															out0 => daddaToSum(0),
 															out1 => daddaToSum(1));
-	outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
-	m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
+	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	tree_add: PP_ADDER18	PORT MAP(	a => daddaToSum(0),
+						b => daddaToSum(1),
+						cin => '0',
+						sum => m_out);
 
 END NoExt;
 
@@ -170,6 +186,16 @@ ARCHITECTURE approx of MBE_dadda_mult_9x9 is
 				PP_out: OUT STD_LOGIC_VECTOR((2*Nb)*((Nb+3)/2)-1 DOWNTO 0)  --instantiate number of outputs according to the number of triplets
 		);
 	END Component;
+
+	COMPONENT PP_ADDER18 IS
+		PORT(
+			a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			cin: IN STD_LOGIC;
+			cout: OUT STD_LOGIC;
+			sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
+		);
+	END COMPONENT;
 	
 BEGIN
 
@@ -191,8 +217,12 @@ BEGIN
 															in5 => splitToDadda(5),
 															out0 => daddaToSum(0),
 															out1 => daddaToSum(1));
-	outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
-	m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
+	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	tree_add: PP_ADDER18	PORT MAP(	a => daddaToSum(0),
+						b => daddaToSum(1),
+						cin => '0',
+						sum => m_out);
 
 END approx;
 
@@ -228,6 +258,16 @@ ARCHITECTURE approxCut of MBE_dadda_mult_9x9 is
 				PP_out: OUT STD_LOGIC_VECTOR((2*Nb)*((Nb+3)/2)-1 DOWNTO 0)  --instantiate number of outputs according to the number of triplets
 		);
 	END Component;
+
+	COMPONENT PP_ADDER18 IS
+		PORT(
+			a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			cin: IN STD_LOGIC;
+			cout: OUT STD_LOGIC;
+			sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
+		);
+	END COMPONENT;
 	
 BEGIN
 
@@ -249,7 +289,11 @@ BEGIN
 															in5 => splitToDadda(5),
 															out0 => daddaToSum(0),
 															out1 => daddaToSum(1));
-	outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
-	m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
+	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	tree_add: PP_ADDER18	PORT MAP(	a => daddaToSum(0),
+						b => daddaToSum(1),
+						cin => '0',
+						sum => m_out);
 
 END approxCut;
