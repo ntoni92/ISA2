@@ -150,6 +150,28 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity compressor_53_approx
 -- Compiling architecture DATAFLOW of compressor_53_approx
 
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mult_n
+-- Compiling architecture beh_mult of mult_n
+-- Loading package MATH_REAL
+-- Loading entity MBE_dadda_mult_9x9
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mult_comb_n
+-- Compiling architecture beh_mult of mult_comb_n
+-- Loading package MATH_REAL
+-- Loading entity MBE_dadda_mult_9x9
+
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -166,24 +188,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity BK_4bit
 -- Compiling architecture struct of BK_4bit
-
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity mult_n
--- Compiling architecture beh_mult of mult_n
-
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity mult_comb_n
--- Compiling architecture beh_mult of mult_comb_n
 
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/CARRY_UNIT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/CARRY_UNIT.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

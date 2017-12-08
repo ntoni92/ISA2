@@ -35,6 +35,13 @@ ARCHITECTURE beh_mult OF mult_n IS
 		);
 	END COMPONENT;
 
+	COMPONENT MBE_dadda_mult_9x9 is
+		Port(	A: IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+			B: IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+			m_out: OUT std_logic_vector (17 DOWNTO 0)
+		);
+	End COMPONENT;
+
 	SIGNAL mult_signed: SIGNED((2*Nb)-1 DOWNTO 0);
 	SIGNAL in_a_reg_to_mult: STD_LOGIC_VECTOR (Nb-1 DOWNTO 0);
 	SIGNAL in_b_reg_to_mult: STD_LOGIC_VECTOR (Nb-1 DOWNTO 0);
@@ -85,10 +92,14 @@ BEGIN
 						DOUT => enable_array_signal(i+1 DOWNTO i+1));
 	END GENERATE;
 
-	multiplication: PROCESS(in_a_reg_to_mult, in_b_reg_to_mult)
-			BEGIN
-				mult_signed <= SIGNED(in_a_reg_to_mult) * SIGNED(in_b_reg_to_mult);
-			END PROCESS;
+	multiplication: ENTITY work.MBE_dadda_mult_9x9(approxCut)
+			PORT MAP (	A => in_a_reg_to_mult,
+					B => in_b_reg_to_mult,
+					m_out => pipe_array_signal(0));
+	--multiplication: PROCESS(in_a_reg_to_mult, in_b_reg_to_mult)
+	--		BEGIN
+	--			mult_signed <= SIGNED(in_a_reg_to_mult) * SIGNED(in_b_reg_to_mult);
+	--		END PROCESS;
 
-	pipe_array_signal(0) <= STD_LOGIC_VECTOR(mult_signed);
+	--pipe_array_signal(0) <= STD_LOGIC_VECTOR(mult_signed);
 END beh_mult;
