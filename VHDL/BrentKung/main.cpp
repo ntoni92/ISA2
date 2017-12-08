@@ -18,7 +18,7 @@ int main()
     cout << endl;
 	*/
 
-    N = 9;
+    N = 19;
 
     for(i = 0; i < int(log2(N)); i++){
         N_BK = N/(pow(2,i));
