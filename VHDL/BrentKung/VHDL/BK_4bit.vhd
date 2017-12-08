@@ -18,8 +18,8 @@ ARCHITECTURE struct OF BK_4bit IS
 	SIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
 	SIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
 	SIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
-	SIGNAL Gout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-	SIGNAL Pout_lv2 : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+	SIGNAL Gout_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
+	SIGNAL Pout_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);
 
 COMPONENT AMPERSAND IS
 	PORT(
@@ -69,8 +69,6 @@ BEGIN
 		Gout => Gin_lv2(1),
 		Pout => Pin_lv2(1)
 	);
-	G_out(0) <= G_in(0);
-	P_out(0) <= P_in(0);
 
 	BK_Ndiv2: BK_2bit PORT MAP(
 		G_in => Gin_lv2,
@@ -79,10 +77,14 @@ BEGIN
 		P_out => PoutBK_lv2
 	);
 
+
+	G_out(0) <= G_in(0);
+	P_out(0) <= P_in(0);
 	G_out(1) <= GoutBK_lv2(0);
 	P_out(1) <= PoutBK_lv2(0);
 	G_out(2) <= Gout_lv2(0);
 	P_out(2) <= Pout_lv2(0);
 	G_out(3) <= GoutBK_lv2(1);
 	P_out(3) <= PoutBK_lv2(1);
+
 END struct;
