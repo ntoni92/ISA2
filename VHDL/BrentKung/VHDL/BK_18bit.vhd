@@ -2,16 +2,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 
-ENTITY BK_19bit IS
+ENTITY BK_18bit IS
 	PORT(
-		G_in: IN STD_LOGIC_VECTOR(18 DOWNTO 0);
-		P_in: IN STD_LOGIC_VECTOR(18 DOWNTO 0);
-		G_out: OUT STD_LOGIC_VECTOR(18 DOWNTO 0);
-		P_out : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
+		G_in: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+		P_in: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+		G_out: OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+		P_out : OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
 	);
 END ENTITY;
 
-ARCHITECTURE struct OF BK_19bit IS
+ARCHITECTURE struct OF BK_18bit IS
 
 	SIGNAL Gin_lv2 : STD_LOGIC_VECTOR(8 DOWNTO 0);
 	SIGNAL Pin_lv2 : STD_LOGIC_VECTOR(8 DOWNTO 0);
@@ -186,15 +186,6 @@ BEGIN
 		Gout => Gin_lv2(8),
 		Pout => Pin_lv2(8)
 	);
-	AMP_OP_18: AMPERSAND PORT MAP(
-		Gin0 => GoutBK_lv2(8),
-		Pin0 => PoutBK_lv2(8),
-		Gin1 => G_in(18),
-		Pin1 => P_in(18),
-		Gout => Gout_lv2(8),
-		Pout => Pout_lv2(8)
-	);
-
 
 	BK_Ndiv2: BK_9bit PORT MAP(
 		G_in => Gin_lv2,
@@ -240,7 +231,5 @@ BEGIN
 	P_out(16) <= Pout_lv2(7);
 	G_out(17) <= GoutBK_lv2(8);
 	P_out(17) <= PoutBK_lv2(8);
-	G_out(18) <= Gout_lv2(8);
-	P_out(18) <= Pout_lv2(8);
 
 END struct;

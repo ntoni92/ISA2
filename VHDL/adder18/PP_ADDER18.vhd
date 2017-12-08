@@ -2,17 +2,18 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
-ENTITY PP_ADDER IS
+ENTITY PP_ADDER18 IS
 	PORT(
-		a: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-		b: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+		a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+		b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
 		cin: IN STD_LOGIC;
 		cout: OUT STD_LOGIC;
-		sum: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+		sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
 	);
 END ENTITY;
 
-ARCHITECTURE struct OF PP_ADDER IS
+ARCHITECTURE struct OF PP_ADDER18 IS
+	CONSTANT N: INTEGER:=18;
 	SIGNAL G_out_sig, P_out_sig: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 	SIGNAL GBK_out_sig, PBK_out_sig: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 	SIGNAL carry_sig: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
@@ -27,12 +28,12 @@ ARCHITECTURE struct OF PP_ADDER IS
 		);
 	END COMPONENT;
 	
-	COMPONENT BK_19bit IS
+	COMPONENT BK_18bit IS
 		PORT(
-			G_in: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-			P_in: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-			G_out: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-			P_out : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+			G_in: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			P_in: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+			G_out: OUT STD_LOGIC_VECTOR(17 DOWNTO 0);
+			P_out : OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
 		);
 	END COMPONENT;
 	
@@ -64,7 +65,7 @@ BEGIN
 								G_out => G_out_sig,
 								P_out => P_out_sig);
 								
-	BKunit: BK_19bit	PORT MAP(	G_in => G_out_sig,
+	BKunit: BK_18bit	PORT MAP(	G_in => G_out_sig,
 								P_in => P_out_sig,
 								G_out => GBK_out_sig,
 								P_out => PBK_out_sig);

@@ -18,7 +18,7 @@ int main()
     cout << endl;
 	*/
 
-    N = 19;
+    N = 18;
 
     for(i = 0; i < int(log2(N)); i++){
         N_BK = N/(pow(2,i));
@@ -37,25 +37,24 @@ int main()
         fprintf(fp,"\n\n");
 
         fprintf(fp,"ENTITY BK_%dbit IS\n", N_BK);
-        fprintf(fp,"\tGENERIC(N: INTEGER := %d);\n", N_BK);
         fprintf(fp,"\tPORT(\n");
-        fprintf(fp,"\t\tG_in: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\t\tP_in: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\t\tG_out: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-        fprintf(fp,"\t\tP_out : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)\n");
+        fprintf(fp,"\t\tG_in: IN STD_LOGIC_VECTOR(%d DOWNTO 0);\n", N_BK-1);
+        fprintf(fp,"\t\tP_in: IN STD_LOGIC_VECTOR(%d DOWNTO 0);\n", N_BK-1);
+        fprintf(fp,"\t\tG_out: OUT STD_LOGIC_VECTOR(%d DOWNTO 0);\n", N_BK-1);
+        fprintf(fp,"\t\tP_out : OUT STD_LOGIC_VECTOR(%d DOWNTO 0)\n", N_BK-1);
         fprintf(fp,"\t);\n");
         fprintf(fp,"END ENTITY;\n\n");
 
         fprintf(fp,"ARCHITECTURE struct OF BK_%dbit IS\n\n", N_BK);
 
-        fprintf(fp,"\tSIGNAL Gin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL Pin_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Gin_lv2 : STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
+        fprintf(fp,"\tSIGNAL Pin_lv2 : STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
 
-        fprintf(fp,"\tSIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL GoutBK_lv2 : STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
+        fprintf(fp,"\tSIGNAL PoutBK_lv2 : STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
 
-        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
-        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR((N/2)-1 DOWNTO 0);\n");
+        fprintf(fp,"\tSIGNAL Gout_lv2 : STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
+        fprintf(fp,"\tSIGNAL Pout_lv2 : STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
         fprintf(fp,"\n");
 
         fprintf(fp,"COMPONENT AMPERSAND IS\n");
@@ -71,12 +70,11 @@ int main()
 
         if ( i < int(log2(N)-1) ){
             fprintf(fp,"COMPONENT BK_%dbit IS\n", N_BK/2);
-            fprintf(fp,"\tGENERIC(N: INTEGER := %d);\n", N_BK/2);
             fprintf(fp,"\tPORT(\n");
-            fprintf(fp,"\t\tG_in: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-            fprintf(fp,"\t\tP_in: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-            fprintf(fp,"\t\tG_out : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);\n");
-            fprintf(fp,"\t\tP_out : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)\n");
+            fprintf(fp,"\t\tG_in: IN STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
+            fprintf(fp,"\t\tP_in: IN STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
+            fprintf(fp,"\t\tG_out: OUT STD_LOGIC_VECTOR(%d DOWNTO 0);\n", (N_BK/2)-1);
+            fprintf(fp,"\t\tP_out : OUT STD_LOGIC_VECTOR(%d DOWNTO 0)\n", (N_BK/2)-1);
             fprintf(fp,"\t);\n");
             fprintf(fp,"END COMPONENT;\n\n");
         }
