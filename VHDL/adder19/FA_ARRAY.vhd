@@ -20,18 +20,18 @@ ARCHITECTURE struct OF FA_ARRAY IS
 	SIGNAL sum_sig: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 
 	COMPONENT FULLADD IS
-	PORT (    
-			Cin, a, b: IN STD_LOGIC ;
-			sum, Cout: OUT STD_LOGIC ) ;
+PORT (    
+			Cin, x, y: IN STD_LOGIC ;
+			s, Cout: OUT STD_LOGIC ) ;
 	END COMPONENT;
 BEGIN
 	carry_vector(0) <= c0;
 	carry_vector(N DOWNTO 1) <= Cin;
 	Cin_conn: FOR i IN 0 TO N-1 GENERATE
 		FA: FULLADD PORT MAP(	Cin => carry_vector(i),
-								a => a(i),
-								b => b(i),
-								sum => sum_sig(i));
+								x => a(i),
+								y => b(i),
+								s => sum_sig(i));
 	END GENERATE;
 	
 	sum <= sum_sig;

@@ -31,7 +31,7 @@ BEGIN
 		FA: FULLADD PORT MAP(	Cin => carry_vector(i),
 								x => a(i),
 								y => b(i),
-								s => sum_sig(i));
+								sum => sum_sig(i));
 	END GENERATE;
 	
 	sum <= sum_sig;

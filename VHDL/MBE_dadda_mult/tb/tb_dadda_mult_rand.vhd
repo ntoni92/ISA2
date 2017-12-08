@@ -17,6 +17,7 @@ SIGNAL A_signed, B_signed: SIGNED(8 DOWNTO 0);
 SIGNAL error: STD_LOGIC;
 SIGNAL rand_num_A, rand_num_B: INTEGER := 0;
 SIGNAL int_out: INTEGER;  
+SIGNAL error_qty: INTEGER;
 
 component MBE_dadda_mult_9x9 IS
 	Port(	A: IN STD_LOGIC_VECTOR(8 DOWNTO 0);
@@ -27,7 +28,7 @@ END component;
 
 BEGIN
 	
-DUT: 	ENTITY work.MBE_dadda_mult_9x9(NoExt)
+DUT: 	ENTITY work.MBE_dadda_mult_9x9(approxCut)
 			PORT MAP(	A => A, 
 					B => B,
 					m_out => m_out);
@@ -84,7 +85,9 @@ compare_PROCESS: PROCESS(E_out)
 		error <= '0';
 		if to_integer(E_out) /= to_integer(signed(m_out)) then
 			error <= '1';
+			
 		end if;
+		error_qty <= abs(to_integer(E_out)-to_integer(signed(m_out)));
 	END PROCESS;
 
 	

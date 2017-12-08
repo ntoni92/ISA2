@@ -3,12 +3,12 @@ Use ieee.std_logic_1164.all;
 
 ENTITY FULLADD IS
 PORT (    
-			Cin, a, b: IN STD_LOGIC ;
-			sum, Cout: OUT STD_LOGIC ) ;
+			Cin, x, y: IN STD_LOGIC ;
+			s, Cout: OUT STD_LOGIC ) ;
 END ENTITY;
 
 ARCHITECTURE beh OF FULLADD IS
 BEGIN
-sum <= a XOR b XOR Cin ;
-Cout <= (a AND b) OR (Cin AND a) OR (Cin AND b) ;
+s <= x XOR y XOR Cin ;
+Cout <= (x AND y) OR (Cin AND x) OR (Cin AND y) ;
 END beh ;
