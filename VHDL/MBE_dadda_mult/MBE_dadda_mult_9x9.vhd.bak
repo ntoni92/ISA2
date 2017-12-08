@@ -239,4 +239,4 @@ BEGIN
 	outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
 	m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
 
-END approx;
+END approxCut;

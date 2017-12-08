@@ -41,6 +41,17 @@ ARCHITECTURE structural of MBE_dadda_mult_9x9 is
 				PP_out: OUT STD_LOGIC_VECTOR((2*Nb)*NATURAL(FLOOR(REAL((Nb+1)/2)))-1 DOWNTO 0)  --instantiate number of outputs according to the number of triplets
 		);
 	END Component;
+
+	Component adder_n IS
+	GENERIC(
+		Nb: INTEGER := 9
+	);
+	PORT(
+		in_a: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
+		in_b: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
+		sum_out: OUT STD_LOGIC_VECTOR(Nb-1 DOWNTO 0)
+	);
+	END Component;
 	
 BEGIN
 
@@ -59,8 +70,10 @@ BEGIN
 															in4 => splitToDadda(4),
 															out0 => daddaToSum(0),
 															out1 => daddaToSum(1));
-	outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
-	m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
+	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
+	tree_add: adder_n GENERIC MAP (Nb => 19)
+				PORT MAP();
 
 END structural;
 

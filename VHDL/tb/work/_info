@@ -22,9 +22,9 @@ VzEZRP<09YR?gN@Jg4^hzK2
 !s100 >i>@zdjFLJV71JYA6kG`>0
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1512734031
+Z8 !s110 1512734950
 !i10b 1
-Z9 !s108 1512734031.000000
+Z9 !s108 1512734950.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder_n.vhd|
 Z11 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder_n.vhd|
 !i113 1
@@ -49,25 +49,263 @@ R11
 !i113 1
 R12
 R13
-Ecell
-Z14 w1511781093
+Eampersand
+Z14 w1512327189
 R1
 R2
 R3
 R4
-Z15 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd
-Z16 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd
+Z15 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/AMPERSAND.vhd
+Z16 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/AMPERSAND.vhd
+l0
+L5
+VJOSS2F3zj1hnW<27UBhk40
+!s100 P05eP3ni`>Z=5oh0YOZfT3
+R7
+32
+Z17 !s110 1512734952
+!i10b 1
+Z18 !s108 1512734952.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/AMPERSAND.vhd|
+Z20 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/AMPERSAND.vhd|
+!i113 1
+R12
+R13
+Astruct
+R1
+R2
+R3
+DEx4 work 9 ampersand 0 22 JOSS2F3zj1hnW<27UBhk40
+l17
+L16
+VB_;DP1]oX24A:EVg1=:NQ3
+!s100 5hSbL=zP;MKCGiP=VAQ=g3
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ebk_19bit
+Z21 w1512734407
+R2
+R3
+R4
+Z22 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_19bit.vhd
+Z23 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_19bit.vhd
+l0
+L5
+Vo9e12cDW[c_:SnBiRDE=J3
+!s100 <ea2beU1YE5ZQBVK3JFV?2
+R7
+32
+Z24 !s110 1512734953
+!i10b 1
+Z25 !s108 1512734953.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_19bit.vhd|
+Z27 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_19bit.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+DEx4 work 8 bk_19bit 0 22 o9e12cDW[c_:SnBiRDE=J3
+l45
+L15
+VZ8ND:P^b;dg0<T;MnnRlz2
+!s100 i?@z2o9CbRd=ChjYLlL]R2
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Ebk_2bit
+R21
+R2
+R3
+R4
+Z28 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_2bit.vhd
+Z29 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_2bit.vhd
+l0
+L5
+V7dh2VXcXShjYkP34HYgHh0
+!s100 ?9bMGOihlj5hE]H1Y]a`f1
+R7
+32
+R17
+!i10b 1
+R18
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_2bit.vhd|
+Z31 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_2bit.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+DEx4 work 7 bk_2bit 0 22 7dh2VXcXShjYkP34HYgHh0
+l35
+L15
+V8EXdf59[VPB^kn?LTVd1>2
+!s100 [G9HVTTOC^ULHNkfQ:K]z3
+R7
+32
+R17
+!i10b 1
+R18
+R30
+R31
+!i113 1
+R12
+R13
+Ebk_4bit
+R21
+R2
+R3
+R4
+Z32 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_4bit.vhd
+Z33 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_4bit.vhd
+l0
+L5
+V[h38a7ZM>RRRH3<_]EQ=61
+!s100 YJR0c>0L0BQhzA]AUBi4V3
+R7
+32
+R24
+!i10b 1
+R18
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_4bit.vhd|
+Z35 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_4bit.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+DEx4 work 7 bk_4bit 0 22 [h38a7ZM>RRRH3<_]EQ=61
+l45
+L15
+VC`T<b:gJVnz5ODWSNCdhQ0
+!s100 4BJb_2;7`>lUMHFJNBNaZ0
+R7
+32
+R24
+!i10b 1
+R18
+R34
+R35
+!i113 1
+R12
+R13
+Ebk_9bit
+R21
+R2
+R3
+R4
+Z36 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_9bit.vhd
+Z37 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_9bit.vhd
+l0
+L5
+Va78_e5S]QZ9K?cgU3o;9]0
+!s100 LUCC>za^nkIH^H]iWAXA;2
+R7
+32
+R24
+!i10b 1
+R25
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_9bit.vhd|
+Z39 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/BK_9bit.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+DEx4 work 7 bk_9bit 0 22 a78_e5S]QZ9K?cgU3o;9]0
+l45
+L15
+V8BaX2n8Ag1;@^23SfGi2m1
+!s100 R^R1mC5njVVUfO1]CTi[z2
+R7
+32
+R24
+!i10b 1
+R25
+R38
+R39
+!i113 1
+R12
+R13
+Ecarry_unit
+R14
+R1
+R2
+R3
+R4
+Z40 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/CARRY_UNIT.vhd
+Z41 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/CARRY_UNIT.vhd
+l0
+L5
+Vc;31X<LKbI;E8?1<hXjd43
+!s100 68I02hf_<FZm>0R^DYbUN0
+R7
+32
+R24
+!i10b 1
+R25
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/CARRY_UNIT.vhd|
+Z43 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/CARRY_UNIT.vhd|
+!i113 1
+R12
+R13
+Astruct
+R1
+R2
+R3
+DEx4 work 10 carry_unit 0 22 c;31X<LKbI;E8?1<hXjd43
+l16
+L15
+V3o8n^?AKWB1SL9KkMZkk02
+!s100 [0MEO:K9GNFNRCiT]bjF`1
+R7
+32
+R24
+!i10b 1
+R25
+R42
+R43
+!i113 1
+R12
+R13
+Ecell
+Z44 w1511781093
+R1
+R2
+R3
+R4
+Z45 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd
+Z46 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd
 l0
 L5
 V7O2z=?zJ>NVX<USThh5oK3
 !s100 fI;NjY`eNJ:GPJ^FKPW620
 R7
 32
-Z17 !s110 1512734032
+Z47 !s110 1512734951
 !i10b 1
-Z18 !s108 1512734032.000000
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd|
-Z20 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd|
+Z48 !s108 1512734951.000000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd|
+Z50 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd|
 !i113 1
 R12
 R13
@@ -82,33 +320,33 @@ VG57;V;`8^eMV3<mUBmKKf3
 !s100 >J5W1dXLcH@W_Km7iDiH=0
 R7
 32
-R17
+R47
 !i10b 1
-R18
-R19
-R20
+R48
+R49
+R50
 !i113 1
 R12
 R13
 Ecell_roorda
-Z21 w1512335935
+Z51 w1512335935
 R1
 R2
 R3
 R4
-Z22 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
-Z23 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
+Z52 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
+Z53 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
 l0
 L5
 V>FRgF]iHGVF1CY9m=YPoN0
 !s100 7`>0odj<mJ=Wdf=ek373M2
 R7
 32
-R17
+R47
 !i10b 1
-R18
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd|
-Z25 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd|
+R48
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd|
+Z55 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd|
 !i113 1
 R12
 R13
@@ -123,11 +361,11 @@ Vb1ef?blUWCK`l6[f6zOBo2
 !s100 oMJXoD0E[eMHai@Qz;9gf3
 R7
 32
-R17
+R47
 !i10b 1
-R18
-R24
-R25
+R48
+R54
+R55
 !i113 1
 R12
 R13
@@ -137,8 +375,8 @@ R1
 R2
 R3
 R4
-Z26 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd
-Z27 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd
+Z56 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd
+Z57 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd
 l0
 L5
 V3Kf1o`?39;;8NGU_P]@_Y3
@@ -148,8 +386,8 @@ R7
 R8
 !i10b 1
 R9
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd|
-Z29 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd|
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd|
+Z59 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Cell_Unf_Pipe.vhd|
 !i113 1
 R12
 R13
@@ -167,29 +405,29 @@ R7
 R8
 !i10b 1
 R9
-R28
-R29
+R58
+R59
 !i113 1
 R12
 R13
 Ecompressor_53
-Z30 w1511612552
+Z60 w1511612552
 R2
 R3
 R4
-Z31 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd
-Z32 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd
+Z61 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd
+Z62 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd
 l0
 L4
 VNgOXUhhcmoWdgh;P3URBV2
 !s100 joVf35[Gm=D=RiJjER_nW3
 R7
 32
-R17
+R47
 !i10b 1
-R18
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd|
-Z34 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd|
+R48
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd|
+Z64 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53.vhd|
 !i113 1
 R12
 R13
@@ -203,32 +441,32 @@ VcA:Ac776B[5iK<4:F0B>^2
 !s100 d0I9GMU37eA;5Q52;SmNj2
 R7
 32
-R17
+R47
 !i10b 1
-R18
-R33
-R34
+R48
+R63
+R64
 !i113 1
 R12
 R13
 Ecompressor_53_approx
-Z35 w1512560402
+Z65 w1512560402
 R2
 R3
 R4
-Z36 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd
-Z37 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd
+Z66 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd
+Z67 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd
 l0
 L5
 VnCV]Skl9fI>[m=zQng1l>0
 !s100 =ZoSN9fGX1D2jU_M@B>o91
 R7
 32
-R17
+R47
 !i10b 1
-R18
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd|
-Z39 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd|
+R48
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd|
+Z69 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_53_approx.vhd|
 !i113 1
 R12
 R13
@@ -242,33 +480,33 @@ VM8BfHg65=co6O2^hfMO>U2
 !s100 X5n7M5NVzX2TT9=CA;g7S1
 R7
 32
-R17
+R47
 !i10b 1
-R18
-R38
-R39
+R48
+R68
+R69
 !i113 1
 R12
 R13
 Edadda_tree_18x5_ext
-Z40 w1511780115
+Z70 w1511780115
 R1
 R2
 R3
 R4
-Z41 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd
-Z42 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd
+Z71 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd
+Z72 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd
 l0
 L5
 VRO@K3o?em1=<^U_Z<lR@[3
 !s100 IZfBA2<<QiR:]:J3E]fYR0
 R7
 32
-R17
+R47
 !i10b 1
-R18
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd|
-Z44 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd|
+R48
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd|
+Z74 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x5_ext.vhd|
 !i113 1
 R12
 R13
@@ -283,33 +521,33 @@ VmVkoSiWP:8?:Ig=FC2AY13
 !s100 Yeb8g^?EIc]e1[n2?B=942
 R7
 32
-R17
+R47
 !i10b 1
-R18
-R43
-R44
+R48
+R73
+R74
 !i113 1
 R12
 R13
 Edadda_tree_18x6_noext
-Z45 w1512731729
+Z75 w1512731729
 R1
 R2
 R3
 R4
-Z46 8C:\Users\meaep\Documents\GitHub\ISA2\VHDL\MBE_dadda_mult\dadda_tree_18x6_NoExt.vhd
-Z47 FC:\Users\meaep\Documents\GitHub\ISA2\VHDL\MBE_dadda_mult\dadda_tree_18x6_NoExt.vhd
+Z76 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x6_NoExt.vhd
+Z77 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x6_NoExt.vhd
 l0
 L5
 VYNa`dMDDVeoiXO=HbheNI1
 !s100 fdg_AiEX:NE;zhReQ543I1
 R7
 32
-R17
+R47
 !i10b 1
-R18
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\meaep\Documents\GitHub\ISA2\VHDL\MBE_dadda_mult\dadda_tree_18x6_NoExt.vhd|
-Z49 !s107 C:\Users\meaep\Documents\GitHub\ISA2\VHDL\MBE_dadda_mult\dadda_tree_18x6_NoExt.vhd|
+R48
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x6_NoExt.vhd|
+Z79 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/dadda_tree_18x6_NoExt.vhd|
 !i113 1
 R12
 R13
@@ -317,18 +555,18 @@ Aapproxcut
 R1
 R2
 R3
-Z50 DEx4 work 21 dadda_tree_18x6_noext 0 22 YNa`dMDDVeoiXO=HbheNI1
+Z80 DEx4 work 21 dadda_tree_18x6_noext 0 22 YNa`dMDDVeoiXO=HbheNI1
 l500
 L474
 V[;NB5>D_?WU8bR]n]NoiC2
 !s100 Dcb0>CF1^80CmF6Re9lz;3
 R7
 32
-R17
+R47
 !i10b 1
-R18
 R48
-R49
+R78
+R79
 !i113 1
 R12
 R13
@@ -336,18 +574,18 @@ Aapprox
 R1
 R2
 R3
-R50
+R80
 l272
 L246
 VJ1HS<n[LMVhfMQL5OK0:U1
 !s100 =WSWc[VVdg:SOP^Ih2Pi32
 R7
 32
-R17
+R47
 !i10b 1
-R18
 R48
-R49
+R78
+R79
 !i113 1
 R12
 R13
@@ -355,18 +593,59 @@ Astructural
 R1
 R2
 R3
-R50
+R80
 l44
 L18
 V^c6T4D<NZDWZhn3Tbj8bU3
 !s100 lhGZ]n;OYaI?Y6QOSUk662
 R7
 32
-R17
+R47
 !i10b 1
-R18
 R48
-R49
+R78
+R79
+!i113 1
+R12
+R13
+Efa_array
+R14
+R1
+R2
+R3
+R4
+Z81 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FA_ARRAY.vhd
+Z82 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FA_ARRAY.vhd
+l0
+L5
+VigZz9bmT`m???:T_X[zRO3
+!s100 E3LPA<>AlYnZkYC9O9dGT2
+R7
+32
+R24
+!i10b 1
+R25
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FA_ARRAY.vhd|
+Z84 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FA_ARRAY.vhd|
+!i113 1
+R12
+R13
+Astruct
+R1
+R2
+R3
+DEx4 work 8 fa_array 0 22 igZz9bmT`m???:T_X[zRO3
+l27
+L17
+VR5]LQFdEZ]IQJoIn:EkYc0
+!s100 PN>aUMgSln8Cl;ki<Mj5g1
+R7
+32
+R24
+!i10b 1
+R25
+R83
+R84
 !i113 1
 R12
 R13
@@ -376,8 +655,8 @@ R1
 R2
 R3
 R4
-Z51 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd
-Z52 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd
+Z85 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd
+Z86 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd
 l0
 L5
 V`k9HEleT8]N[M><FHf>_R1
@@ -387,8 +666,8 @@ R7
 R8
 !i10b 1
 R9
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd|
-Z54 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd|
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd|
+Z88 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd|
 !i113 1
 R12
 R13
@@ -406,68 +685,109 @@ R7
 R8
 !i10b 1
 R9
-R53
-R54
+R87
+R88
 !i113 1
 R12
 R13
 Efulladd
-Z55 w1511543385
+R14
 R2
 R3
 R4
-Z56 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/fulladd.vhd
-Z57 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/fulladd.vhd
+Z89 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FULLADD.vhd
+Z90 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FULLADD.vhd
 l0
 L4
-VYU9aE0HQ9=Bc9:nDLDTeG3
-!s100 KRnCa0KFl<OK<=>bV8Bee3
+VKo=]T8LY<TF>:c0EacDc`3
+!s100 nKGYGEA0Cz7_bkca538B82
 R7
 32
-Z58 !s110 1512734033
+R24
 !i10b 1
-Z59 !s108 1512734033.000000
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/fulladd.vhd|
-Z61 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/fulladd.vhd|
+R25
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FULLADD.vhd|
+Z92 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/FULLADD.vhd|
 !i113 1
 R12
 R13
 Abeh
 R2
 R3
-DEx4 work 7 fulladd 0 22 YU9aE0HQ9=Bc9:nDLDTeG3
+DEx4 work 7 fulladd 0 22 Ko=]T8LY<TF>:c0EacDc`3
 l11
 L10
-VRk_N>cPACP37L2H0jRZbU3
-!s100 ej4ICH=KZ>NV_GUzKFiI]0
+VgA3`VVL1hbz]^;`aCnmed1
+!s100 i;PUaOXZ<fh7Uim9YOVaM0
 R7
 32
-R58
+R24
 !i10b 1
-R59
-R60
-R61
+R25
+R91
+R92
+!i113 1
+R12
+R13
+Egp_unit
+R14
+R1
+R2
+R3
+R4
+Z93 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/GP_UNIT.vhd
+Z94 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/GP_UNIT.vhd
+l0
+L5
+Vb:8kaXm=biC01]gkl`4];2
+!s100 L;CY3C;W8MWD4blj?S0?A1
+R7
+32
+R24
+!i10b 1
+R25
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/GP_UNIT.vhd|
+Z96 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/GP_UNIT.vhd|
+!i113 1
+R12
+R13
+Astruct
+R1
+R2
+R3
+DEx4 work 7 gp_unit 0 22 b:8kaXm=biC01]gkl`4];2
+l16
+L15
+V]bhFZ?H1Az0Po3a[kjZ1n0
+!s100 9Uc<fUi@0nZ]T9HUdkWFE1
+R7
+32
+R24
+!i10b 1
+R25
+R95
+R96
 !i113 1
 R12
 R13
 Ehalfadd
-Z62 w1511612551
+Z97 w1511612551
 R2
 R3
 R4
-Z63 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
-Z64 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
+Z98 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
+Z99 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
 l0
 L4
 VQ0dUUikUoQERWjWKnR8IX3
 !s100 h[k:m<S6ik2K8UJKzED?^1
 R7
 32
-R58
+R47
 !i10b 1
-R59
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd|
-Z66 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd|
+R48
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd|
+Z101 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd|
 !i113 1
 R12
 R13
@@ -481,39 +801,39 @@ VHWP?GncNWFk>^HXV;Kbc<0
 !s100 cR6lVFQnz[0W@kIok8@P53
 R7
 32
-R58
+R47
 !i10b 1
-R59
-R65
-R66
+R48
+R100
+R101
 !i113 1
 R12
 R13
 Embe
-R14
-Z67 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R44
+Z102 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R1
 R2
 R3
 R4
-Z68 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd
-Z69 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd
+Z103 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd
+Z104 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd
 l0
 L6
 VI15[oCl<FN^L95VK1=kL<3
 !s100 _MTzj3S0[ge5id6kbgVI52
 R7
 32
-R58
+R17
 !i10b 1
-R59
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd|
-Z71 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd|
+R18
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd|
+Z106 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE.vhd|
 !i113 1
 R12
 R13
 Abeh_mbe
-R67
+R102
 R1
 R2
 R3
@@ -524,139 +844,139 @@ VOohY]34h<jQ6S1IZnFN6a3
 !s100 ]OB2Pz_?zFYIMI9e1n8h53
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R70
-R71
+R18
+R105
+R106
 !i113 1
 R12
 R13
 Embe_dadda_mult_9x9
-Z72 w1512725083
-R67
+Z107 w1512725083
+R102
 R1
 R2
 R3
 R4
-Z73 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd
-Z74 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd
+Z108 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd
+Z109 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd
 l0
 L6
 V@Wl5NjKlfgWEVO`nn[XI33
 !s100 28^Uol:7AFPVNgaV3S?gl0
 R7
 32
-R58
+R17
 !i10b 1
-R59
-Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd|
-Z76 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd|
+R18
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd|
+Z111 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_dadda_mult_9x9.vhd|
 !i113 1
 R12
 R13
 Aapproxcut
-R50
-R67
+R80
+R102
 R1
 R2
 R3
-Z77 DEx4 work 18 mbe_dadda_mult_9x9 0 22 @Wl5NjKlfgWEVO`nn[XI33
+Z112 DEx4 work 18 mbe_dadda_mult_9x9 0 22 @Wl5NjKlfgWEVO`nn[XI33
 l219
 L186
 VRSNam?WAFHQ4<3>;7bTCe2
 !s100 PechclWd7eGXYQbCIVP]M1
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R75
-R76
+R18
+R110
+R111
 !i113 1
 R12
 R13
 Aapprox
-R50
-R67
+R80
+R102
 R1
 R2
 R3
-R77
+R112
 l161
 L128
 VO?;4^jEPWYBZiNj]_57280
 !s100 6j9PQXFNCETZBOlO7A@B[0
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R75
-R76
+R18
+R110
+R111
 !i113 1
 R12
 R13
 Anoext
-R50
-R67
+R80
+R102
 R1
 R2
 R3
-R77
+R112
 l102
 L69
 V3O23UML]cI]=n][ak[5m41
 !s100 1[fkGl2YSK7=jaUN^5ez[2
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R75
-R76
+R18
+R110
+R111
 !i113 1
 R12
 R13
 Astructural
-R67
+R102
 R1
 R2
 R3
-R77
+R112
 l45
 L13
 V82cNoMYQ^dnYNcjIX66=n3
 !s100 0073SIek]l=2=jKhOa1`42
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R75
-R76
+R18
+R110
+R111
 !i113 1
 R12
 R13
 Embe_roorda
-Z78 w1512380380
+Z113 w1512380380
 R1
 R2
 R3
 R4
-Z79 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd
-Z80 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd
+Z114 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd
+Z115 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd
 l0
 L5
 V`MSZ6d2@1W7kOHf4`YWJ41
 !s100 XS^3<RSjV5ANn9HTchYl50
 R7
 32
-R58
+R17
 !i10b 1
-R59
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd|
-Z82 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd|
+R18
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd|
+Z117 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/MBE_Roorda.vhd|
 !i113 1
 R12
 R13
@@ -671,11 +991,11 @@ V0C9kb4`GDgUezcF4=zDXV2
 !s100 JfSIMoDO;^QaWdGf`DNJi3
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R81
-R82
+R18
+R116
+R117
 !i113 1
 R12
 R13
@@ -685,8 +1005,8 @@ R1
 R2
 R3
 R4
-Z83 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
-Z84 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
+Z118 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
+Z119 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
 l0
 L5
 VJ297IWJ4j3<R:j`aC86e]1
@@ -696,8 +1016,8 @@ R7
 R8
 !i10b 1
 R9
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd|
-Z86 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd|
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd|
+Z121 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd|
 !i113 1
 R12
 R13
@@ -715,19 +1035,19 @@ R7
 R8
 !i10b 1
 R9
-R85
-R86
+R120
+R121
 !i113 1
 R12
 R13
 Emult_n
-Z87 w1512327189
+R14
 R1
 R2
 R3
 R4
-Z88 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
-Z89 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
+Z122 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
+Z123 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
 l0
 L4
 VLTZ9_6Q8GOF7QPnBF1?EQ1
@@ -737,8 +1057,8 @@ R7
 R8
 !i10b 1
 R9
-Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd|
-Z91 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd|
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd|
+Z125 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd|
 !i113 1
 R12
 R13
@@ -756,30 +1076,30 @@ R7
 R8
 !i10b 1
 R9
-R90
-R91
+R124
+R125
 !i113 1
 R12
 R13
 Emux_mbe
-R14
+R44
 R1
 R2
 R3
 R4
-Z92 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd
-Z93 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd
+Z126 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd
+Z127 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd
 l0
 L5
 Vfoi`NK7EV<RE9aNLSQG_52
 !s100 Mazh?[L8hB77l[ZnWkZ@V2
 R7
 32
-R58
+R17
 !i10b 1
-R59
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd|
-Z95 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd|
+R18
+Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd|
+Z129 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe.vhd|
 !i113 1
 R12
 R13
@@ -794,33 +1114,33 @@ V0cYIVjl6fHiY6FPM8Rj<N0
 !s100 XgFXZ4`YG4[8j0`T0IGCn1
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R94
-R95
+R18
+R128
+R129
 !i113 1
 R12
 R13
 Emux_mbe_roorda
-R78
+R113
 R1
 R2
 R3
 R4
-Z96 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd
-Z97 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd
+Z130 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd
+Z131 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd
 l0
 L5
 VgJJl;GV:LGg=1SMh<_W<12
 !s100 >[_c:JgQkc;]?`71]E8:B3
 R7
 32
-R58
+R17
 !i10b 1
-R59
-Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd|
-Z99 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd|
+R18
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd|
+Z133 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd|
 !i113 1
 R12
 R13
@@ -835,11 +1155,11 @@ V2;Ed=RaD6A9g1]l[W<=dk2
 !s100 J9kzHh@BMf[;UVH[8k8KU0
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R98
-R99
+R18
+R132
+R133
 !i113 1
 R12
 R13
@@ -849,19 +1169,19 @@ R1
 R2
 R3
 R4
-Z100 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd
-Z101 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd
+Z134 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd
+Z135 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd
 l0
 L5
 V=T?o^_:SW?Rj:E1iS2o951
 !s100 =Ez;N=obM3niK>f@E5;M23
 R7
 32
-R17
+R8
 !i10b 1
-R18
-Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd|
-Z103 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd|
+R9
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd|
+Z137 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/pipeline.vhd|
 !i113 1
 R12
 R13
@@ -876,11 +1196,52 @@ Vf4OF<Hm[2@^JOdF1TI6d>0
 !s100 O87_YMTdfIAjiz@`Gc^Zo3
 R7
 32
-R17
+R8
 !i10b 1
-R18
-R102
-R103
+R9
+R136
+R137
+!i113 1
+R12
+R13
+Epp_adder
+R14
+R1
+R2
+R3
+R4
+Z138 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/PP_ADDER.vhd
+Z139 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/PP_ADDER.vhd
+l0
+L5
+VkQ[Sf;Y4:MH@RJQNa1=jP1
+!s100 F>]Sik2MZ^mmN;H2j;`ZE0
+R7
+32
+R24
+!i10b 1
+R25
+Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/PP_ADDER.vhd|
+Z141 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/BrentKung/VHDL/PP_ADDER.vhd|
+!i113 1
+R12
+R13
+Astruct
+R1
+R2
+R3
+Z142 DEx4 work 8 pp_adder 0 22 kQ[Sf;Y4:MH@RJQNa1=jP1
+l62
+L16
+Z143 Vf4J5mmkj6W<XCgb=YAOBg3
+Z144 !s100 ;GSaMIDcSdB61WDNS:Ffm3
+R7
+32
+R24
+!i10b 1
+R25
+R140
+R141
 !i113 1
 R12
 R13
@@ -890,8 +1251,8 @@ R1
 R2
 R3
 R4
-Z104 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd
-Z105 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd
+Z145 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd
+Z146 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd
 l0
 L4
 VHg=C3dnR[2f24H[T>n50f2
@@ -901,8 +1262,8 @@ R7
 R8
 !i10b 1
 R9
-Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd|
-Z107 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd|
+Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd|
+Z148 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/Reg_n.vhd|
 !i113 1
 R12
 R13
@@ -920,30 +1281,30 @@ R7
 R8
 !i10b 1
 R9
-R106
-R107
+R147
+R148
 !i113 1
 R12
 R13
 Eshift_n
-R14
+R44
 R1
 R2
 R3
 R4
-Z108 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd
-Z109 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd
+Z149 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd
+Z150 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd
 l0
 L4
 V2S^Djl5Cm:Kk?bPclkL:b2
 !s100 S6k2H=7H8]7PJT4O[[REl0
 R7
 32
-R58
+R17
 !i10b 1
-R59
-Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd|
-Z111 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd|
+R18
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd|
+Z152 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n.vhd|
 !i113 1
 R12
 R13
@@ -951,40 +1312,40 @@ Abeh_shift
 R1
 R2
 R3
-Z112 DEx4 work 7 shift_n 0 22 2S^Djl5Cm:Kk?bPclkL:b2
+DEx4 work 7 shift_n 0 22 2S^Djl5Cm:Kk?bPclkL:b2
 l15
 L13
-Z113 VKeBlCFmAijc`_<3Ohg4B@3
-Z114 !s100 5H=?ji=kaga0UWSdO1X>62
+VKeBlCFmAijc`_<3Ohg4B@3
+!s100 5H=?ji=kaga0UWSdO1X>62
 R7
 32
-R58
+R17
 !i10b 1
-R59
-R110
-R111
+R18
+R151
+R152
 !i113 1
 R12
 R13
 Eshift_n_roorda
-Z115 w1512335949
+Z153 w1512335949
 R1
 R2
 R3
 R4
-Z116 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd
-Z117 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd
+Z154 8C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd
+Z155 FC:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd
 l0
 L5
 V5<`:R8amkbajD^YYT[zi;2
 !s100 G=Nh5RQ2]gk;@cEiObXPl2
 R7
 32
-R17
+R47
 !i10b 1
-R18
-Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd|
-Z119 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd|
+R48
+Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd|
+Z157 !s107 C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/shift_n_Roorda.vhd|
 !i113 1
 R12
 R13
@@ -999,11 +1360,11 @@ VIf6]`;;Ek]7]_6Tl70AIZ1
 !s100 :KK3:c3a9dcCl?XI28n`B0
 R7
 32
-R17
+R47
 !i10b 1
-R18
-R118
-R119
+R48
+R156
+R157
 !i113 1
 R12
 R13
