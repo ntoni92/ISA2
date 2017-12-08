@@ -17,9 +17,9 @@ PORT(
 	DIN_2 : IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
 	Coeffs:	IN	STD_LOGIC_VECTOR(((Ord+1)*Nb)-1 DOWNTO 0); --# of coeffs IS N+1
 	VOUT: OUT STD_LOGIC;
-	DOUT_0: OUT STD_LOGIC_VECTOR(Nb+Ord DOWNTO 0);
-	DOUT_1: OUT STD_LOGIC_VECTOR(Nb+Ord DOWNTO 0);
-	DOUT_2: OUT STD_LOGIC_VECTOR(Nb+Ord DOWNTO 0)
+	DOUT_0: OUT STD_LOGIC_VECTOR(Nb+Ord+1 DOWNTO 0);
+	DOUT_1: OUT STD_LOGIC_VECTOR(Nb+Ord+1 DOWNTO 0);
+	DOUT_2: OUT STD_LOGIC_VECTOR(Nb+Ord+1 DOWNTO 0)
 );
 END ENTITY;
 
@@ -33,7 +33,7 @@ ARCHITECTURE beh of FIR_Filter_Unf_MultPipe IS
 	TYPE coeff_array IS ARRAY(Ord DOWNTO 0) OF STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
 	SIGNAL Bi: coeff_array;
 	
-	TYPE sum_out_col IS ARRAY(0 TO Ord) OF STD_LOGIC_VECTOR(Ord+Nb DOWNTO 0);
+	TYPE sum_out_col IS ARRAY(0 TO Ord) OF STD_LOGIC_VECTOR(Ord+Nb+1 DOWNTO 0);
 	TYPE sum_out_array IS ARRAY(0 TO UO-1) OF sum_out_col;
 	SIGNAL sum_outs: sum_out_array;
 	
@@ -43,7 +43,10 @@ ARCHITECTURE beh of FIR_Filter_Unf_MultPipe IS
 	TYPE Pipe_mult_col IS ARRAY (2 DOWNTO 0) OF STD_LOGIC_VECTOR(2*Nb-1 DOWNTO 0);
 	TYPE Pipe_mult_row IS ARRAY (UO-1 DOWNTO 0) OF Pipe_mult_col;
 	SIGNAL Pipe_mults: Pipe_mult_row;
-	SIGNAL Pipe_outs: Pipe_mult_row;
+
+	TYPE Pipe_mult_col_ext IS ARRAY (2 DOWNTO 0) OF STD_LOGIC_VECTOR(2*Nb DOWNTO 0);
+	TYPE Pipe_mult_row_ext IS ARRAY (UO-1 DOWNTO 0) OF Pipe_mult_col_ext;
+	SIGNAL Pipe_outs: Pipe_mult_row_ext;
 	
 	TYPE VIN_Delay_col IS ARRAY(UO-1 DOWNTO 0) OF STD_LOGIC_VECTOR(10 DOWNTO 0);
 	SIGNAL VIN_delay_line: VIN_Delay_col; -- 10 signals
@@ -87,9 +90,9 @@ ARCHITECTURE beh of FIR_Filter_Unf_MultPipe IS
 		EN_IN : IN STD_LOGIC;
 		DIN: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
 		COEFF: IN STD_LOGIC_VECTOR(Nb-1 DOWNTO 0);
-		SUM_IN: IN STD_LOGIC_VECTOR(Ord+Nb DOWNTO 0);
+		SUM_IN: IN STD_LOGIC_VECTOR(Ord+Nb+1 DOWNTO 0);
 		EN_OUT : OUT STD_LOGIC;
-		SUM_OUT: OUT STD_LOGIC_VECTOR(Ord+Nb DOWNTO 0)
+		SUM_OUT: OUT STD_LOGIC_VECTOR(Ord+Nb+1 DOWNTO 0)
 	);
 	END COMPONENT;
 	
@@ -176,7 +179,7 @@ BEGIN
 		END GENERATE;
 		
 		sum_outs(i)(0)(Nb+1 DOWNTO 0) <= Pipe_mults(i)(i)(Nb+Ord DOWNTO Ord-1);
-		sum_outs(i)(0)(Nb+Ord DOWNTO Nb+2) <= (OTHERS => sum_outs(i)(0)(Nb+1));
+		sum_outs(i)(0)(Nb+Ord+1 DOWNTO Nb+2) <= (OTHERS => sum_outs(i)(0)(Nb+1));
 	
 	END GENERATE;
 	

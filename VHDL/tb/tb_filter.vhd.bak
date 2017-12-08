@@ -96,7 +96,7 @@ in_reg_layer: FOR i IN 0 TO 2 GENERATE
 				END GENERATE;
 out_reg_layer: FOR i IN 0 TO 2 GENERATE
 				REG_OUT: Reg_n
-					GENERIC MAP (Nb => DOUTtoReg(i)'LENGTH)
+					GENERIC MAP (Nb => DOUTtoReg'LENGTH)
 					PORT MAP (CLK => CLK, RST_n => RST_n, EN => VOUT, DIN => DOUTtoReg(i), DOUT => filter_out(i) );
 				END GENERATE;
 	

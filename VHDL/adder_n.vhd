@@ -15,10 +15,22 @@ END ENTITY;
 
 ARCHITECTURE beh_adder OF adder_n IS
 	SIGNAL sum_signed: SIGNED(Nb-1 DOWNTO 0);
+	COMPONENT PP_ADDER19 IS
+		PORT(
+			a: IN STD_LOGIC_VECTOR(18 DOWNTO 0);
+			b: IN STD_LOGIC_VECTOR(18 DOWNTO 0);
+			cin: IN STD_LOGIC;
+			cout: OUT STD_LOGIC;
+			sum: OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
+		);
+	END COMPONENT;
 BEGIN
-	--sum_signed <= SIGNED(in_a(Nb-1) & in_a) + SIGNED(in_b(Nb-1) & in_b);
-	sum_signed <= SIGNED(in_a) + SIGNED(in_b);
-	sum_out <= STD_LOGIC_VECTOR(sum_signed);
+	inside_adder: PP_ADDER19 PORT MAP (	a => in_a,
+						b => in_b,
+						cin  => '0',
+						sum  => sum_out);
+	--sum_signed <= SIGNED(in_a) + SIGNED(in_b);
+	--sum_out <= STD_LOGIC_VECTOR(sum_signed);
 END beh_adder;
 	
 	
