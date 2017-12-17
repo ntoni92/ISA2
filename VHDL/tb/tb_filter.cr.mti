@@ -189,6 +189,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity BK_4bit
 -- Compiling architecture struct of BK_4bit
 
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/tb/tb_filter.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/tb/tb_filter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_FIR_filter_unf_pipe
+-- Compiling architecture test of tb_FIR_filter_unf_pipe
+** Warning: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/tb/tb_filter.vhd(26): (vcom-1236) Shared variables must be of a protected type.
+
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/CARRY_UNIT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/CARRY_UNIT.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
