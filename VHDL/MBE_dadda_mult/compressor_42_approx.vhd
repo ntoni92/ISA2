@@ -23,8 +23,8 @@ begin
 	l0tol1(2) <= D XNOR C;
 	l0tol1(3) <= B XNOR A;
 	
-	SUM0 <= l0tol1(2) OR l0tol1(3);
-	SUM1 <= l0tol1(0) NOR l0tol1(1);
+	SUM0<= l0tol1(2) OR l0tol1(3);
+	SUM1<= l0tol1(0) NOR l0tol1(1);
 	
 	
 end DATAFLOW;

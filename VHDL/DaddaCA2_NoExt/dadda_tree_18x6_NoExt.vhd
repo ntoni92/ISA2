@@ -664,7 +664,7 @@ END approxCut;
 Architecture almost_super_speed of dadda_tree_18x6_NoExt is
 
 	type level2_type is array (5 DOWNTO 0) of std_logic_vector(17 DOWNTO 0);
-	type level1_type is array (2 DOWNTO 0) of std_logic_vector(17 DOWNTO 0);
+	type level1_type is array (3 DOWNTO 0) of std_logic_vector(17 DOWNTO 0);
 	type level0_type is array (1 DOWNTO 0) of std_logic_vector(18 DOWNTO 0);
 	signal level2: level2_type;
 	signal level1: level1_type;
@@ -726,49 +726,49 @@ BEGIN
 	
 	
 --from level2 to level1 compression layer
-	level3to2: for i in 8 to 15 generate
+	level2to1: for i in 8 to 15 generate
 					level2to1_42_cond_first: if i=8 generate
 												level2to1_42: compressor_42_approx PORT MAP (	A => level2(3)(i),
 																								B => level2(2)(i),
 																								C => level2(1)(i),
 																								D => level2(0)(i),
 																								SUM0 => level1(0)(i),
-																								SUM1 => level1(0)(i+1);
-													end generate level3to2_42_cond_first;
+																								SUM1 => level1(0)(i+1));
+													end generate level2to1_42_cond_first;
 					level2to1_42_cond_mid: if i>=9 and i<=10 generate
 												level2to1_42: compressor_42_approx PORT MAP (	A => level2(3)(i),
 																								B => level2(2)(i),
 																								C => level2(1)(i),
 																								D => level2(0)(i),
 																								SUM0 => level1(1)(i),
-																								SUM1 => level1(0)(i+1);
-													end generate level3to2_42_cond_mid;
+																								SUM1 => level1(0)(i+1));
+													end generate level2to1_42_cond_mid;
 					level2to1_42_cond_final: if i=11 generate
 												level2to1_42: compressor_42_approx PORT MAP (	A => level2(4)(i),
 																								B => level2(3)(i),
 																								C => level2(2)(i),
 																								D => level2(1)(i),
 																								SUM0 => level1(1)(i),
-																								SUM1 => level1(0)(i+1);
-													end generate level3to2_42_cond_final;
+																								SUM1 => level1(0)(i+1));
+													end generate level2to1_42_cond_final;
 					level2to1_ha_cond_first: if i=12 generate
 												level2to1_ha: halfadd PORT MAP (	A => level2(2)(i),
 																					B => level2(1)(i),
 																					SUM => level1(1)(i),
 																					CARRY => level1(0)(i+1));
-													end generate level3to2_ha_cond_first;
+													end generate level2to1_ha_cond_first;
 					level2to1_ha_cond_mid: if i=13 or i=14 generate
 												level2to1_ha: halfadd PORT MAP (	A => level2(3)(i),
 																					B => level2(2)(i),
 																					SUM => level1(1)(i),
 																					CARRY => level1(0)(i+1));
-													end generate level3to2_ha_cond_mid;
+													end generate level2to1_ha_cond_mid;
 					level2to1_ha_cond_final: if i=15 generate
 												level2to1_ha: halfadd PORT MAP (	A => level2(4)(i),
 																					B => level2(3)(i),
 																					SUM => level1(1)(i),
 																					CARRY => level1(0)(i+1));
-													end generate level3to2_ha_cond_final;
+													end generate level2to1_ha_cond_final;
 
 					end generate level2to1;	
 	
@@ -780,20 +780,20 @@ BEGIN
 --from level1 to level0 compression layer
 	level1to0: for i in 7 to 17 generate
 					level1to0_42_first_cond: if i=7 generate
-												level1to0_ha: compressor_42_approx PORT MAP (	A => level2(3)(i),
-																								B => level2(2)(i),
-																								C => level2(1)(i),
-																								D => level2(0)(i),
-																								SUM0 => level1(0)(i),
-																								SUM1 => level1(0)(i+1);
+												level1to0_ha: compressor_42_approx PORT MAP (	A => level1(3)(i),
+																								B => level1(2)(i),
+																								C => level1(1)(i),
+																								D => level1(0)(i),
+																								SUM0 => level0(0)(i),
+																								SUM1 => level0(0)(i+1));
 													end generate level1to0_42_first_cond;
 					level1to0_42_cond: if i>=8 and i<=13 generate
-												level1to0_ha: compressor_42_approx PORT MAP (	A => level2(3)(i),
-																								B => level2(2)(i),
-																								C => level2(1)(i),
-																								D => level2(0)(i),
-																								SUM0 => level1(1)(i),
-																								SUM1 => level1(0)(i+1);
+												level1to0_ha: compressor_42_approx PORT MAP (	A => level1(3)(i),
+																								B => level1(2)(i),
+																								C => level1(1)(i),
+																								D => level1(0)(i),
+																								SUM0 => level0(1)(i),
+																								SUM1 => level0(0)(i+1));
 													end generate level1to0_42_cond;
 					
 					level1to0_fa_cond: if i>=14 and i<=16 generate
@@ -812,6 +812,7 @@ BEGIN
 													end generate level1to0_ha_cond;		
 					end generate level1to0;			
 --level0 to output
+	level0(1)(7) <= '0';
 	out0(17 DOWNTO 7) <= level0(0)(17 DOWNTO 7); --operand 1
 	out1(17 DOWNTO 7) <= level0(1)(17 DOWNTO 7); --operand 2
 	out0(6 DOWNTO 0) <= (others=>'0');
@@ -821,7 +822,7 @@ END almost_super_speed;
 Architecture super_speed of dadda_tree_18x6_NoExt is
 
 	type level2_type is array (5 DOWNTO 0) of std_logic_vector(17 DOWNTO 0);
-	type level1_type is array (2 DOWNTO 0) of std_logic_vector(17 DOWNTO 0);
+	type level1_type is array (3 DOWNTO 0) of std_logic_vector(17 DOWNTO 0);
 	type level0_type is array (1 DOWNTO 0) of std_logic_vector(18 DOWNTO 0);
 	signal level2: level2_type;
 	signal level1: level1_type;
@@ -882,49 +883,49 @@ BEGIN
 	
 	
 --from level2 to level1 compression layer
-	level3to2: for i in 8 to 15 generate
+	level2to1: for i in 8 to 15 generate
 					level2to1_42_cond_first: if i=8 generate
 												level2to1_42: compressor_42_approx PORT MAP (	A => level2(3)(i),
 																								B => level2(2)(i),
 																								C => level2(1)(i),
 																								D => level2(0)(i),
 																								SUM0 => level1(0)(i),
-																								SUM1 => level1(0)(i+1);
-													end generate level3to2_42_cond_first;
+																								SUM1 => level1(0)(i+1));
+													end generate level2to1_42_cond_first;
 					level2to1_42_cond_mid: if i>=9 and i<=10 generate
 												level2to1_42: compressor_42_approx PORT MAP (	A => level2(3)(i),
 																								B => level2(2)(i),
 																								C => level2(1)(i),
 																								D => level2(0)(i),
 																								SUM0 => level1(1)(i),
-																								SUM1 => level1(0)(i+1);
-													end generate level3to2_42_cond_mid;
+																								SUM1 => level1(0)(i+1));
+													end generate level2to1_42_cond_mid;
 					level2to1_42_cond_final: if i=11 generate
 												level2to1_42: compressor_42_approx PORT MAP (	A => level2(4)(i),
 																								B => level2(3)(i),
 																								C => level2(2)(i),
 																								D => level2(1)(i),
 																								SUM0 => level1(1)(i),
-																								SUM1 => level1(0)(i+1);
-													end generate level3to2_42_cond_final;
+																								SUM1 => level1(0)(i+1));
+													end generate level2to1_42_cond_final;
 					level2to1_ha_cond_first: if i=12 generate
 												level2to1_ha: halfadd PORT MAP (	A => level2(2)(i),
 																					B => level2(1)(i),
 																					SUM => level1(1)(i),
 																					CARRY => level1(0)(i+1));
-													end generate level3to2_ha_cond_first;
+													end generate level2to1_ha_cond_first;
 					level2to1_ha_cond_mid: if i=13 or i=14 generate
 												level2to1_ha: halfadd PORT MAP (	A => level2(3)(i),
 																					B => level2(2)(i),
 																					SUM => level1(1)(i),
 																					CARRY => level1(0)(i+1));
-													end generate level3to2_ha_cond_mid;
+													end generate level2to1_ha_cond_mid;
 					level2to1_ha_cond_final: if i=15 generate
 												level2to1_ha: halfadd PORT MAP (	A => level2(4)(i),
 																					B => level2(3)(i),
 																					SUM => level1(1)(i),
 																					CARRY => level1(0)(i+1));
-													end generate level3to2_ha_cond_final;
+													end generate level2to1_ha_cond_final;
 
 					end generate level2to1;	
 	
@@ -937,19 +938,19 @@ BEGIN
 	level1to0: for i in 7 to 17 generate
 					level1to0_42_first_cond: if i=7 generate
 												level1to0_ha: compressor_42_approx PORT MAP (	A => level2(3)(i),
-																								B => level2(2)(i),
-																								C => level2(1)(i),
-																								D => level2(0)(i),
-																								SUM0 => level1(0)(i),
-																								SUM1 => level1(0)(i+1);
+																								B => level1(2)(i),
+																								C => level1(1)(i),
+																								D => level1(0)(i),
+																								SUM0 => level0(0)(i),
+																								SUM1 => level0(0)(i+1));
 													end generate level1to0_42_first_cond;
 					level1to0_42_cond: if i>=8 and i<=16 generate
 												level1to0_ha: compressor_42_approx PORT MAP (	A => level2(3)(i),
-																								B => level2(2)(i),
-																								C => level2(1)(i),
-																								D => level2(0)(i),
-																								SUM0 => level1(1)(i),
-																								SUM1 => level1(0)(i+1);
+																								B => level1(2)(i),
+																								C => level1(1)(i),
+																								D => level1(0)(i),
+																								SUM0 => level0(1)(i),
+																								SUM1 => level0(0)(i+1));
 													end generate level1to0_42_cond;
 																					
 					level1to0_ha_cond: if i=17 generate
@@ -960,6 +961,7 @@ BEGIN
 													end generate level1to0_ha_cond;		
 					end generate level1to0;			
 --level0 to output
+	level0(1)(7) <= '0';
 	out0(17 DOWNTO 7) <= level0(0)(17 DOWNTO 7); --operand 1
 	out1(17 DOWNTO 7) <= level0(1)(17 DOWNTO 7); --operand 2
 	out0(6 DOWNTO 0) <= (others=>'0');
