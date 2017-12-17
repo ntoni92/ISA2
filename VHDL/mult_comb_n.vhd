@@ -22,7 +22,7 @@ ARCHITECTURE beh_mult OF mult_comb_n IS
 		);
 	End COMPONENT;
 BEGIN
-	multiplication: ENTITY work.MBE_dadda_mult_9x9(approxCut)
+	multiplication: ENTITY work.MBE_dadda_mult_9x9(super_speed)
 			PORT MAP (	A => in_a,
 					B => in_b,
 					m_out => mult_out);

@@ -45,6 +45,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity dadda_tree_18x6_NoExt
 -- Compiling architecture approxCut of dadda_tree_18x6_NoExt
 -- Loading entity dadda_tree_18x6_NoExt
+-- Compiling architecture almost_super_speed of dadda_tree_18x6_NoExt
+-- Loading entity dadda_tree_18x6_NoExt
+-- Compiling architecture super_speed of dadda_tree_18x6_NoExt
+-- Loading entity dadda_tree_18x6_NoExt
 
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -150,28 +154,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity compressor_53_approx
 -- Compiling architecture DATAFLOW of compressor_53_approx
 
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_n.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity mult_n
--- Compiling architecture beh_mult of mult_n
--- Loading package MATH_REAL
--- Loading entity MBE_dadda_mult_9x9
-
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/mult_comb_n.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity mult_comb_n
--- Compiling architecture beh_mult of mult_comb_n
--- Loading package MATH_REAL
--- Loading entity MBE_dadda_mult_9x9
-
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/cell_Roorda.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -244,6 +226,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity AMPERSAND
 -- Compiling architecture struct of AMPERSAND
 
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_42_approx.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/compressor_42_approx.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity compressor_42_approx
+-- Compiling architecture DATAFLOW of compressor_42_approx
+
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/mux_mbe_Roorda.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -269,8 +259,12 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity MBE_dadda_mult_9x9
 -- Compiling architecture approxCut of MBE_dadda_mult_9x9
 -- Loading entity MBE_dadda_mult_9x9
+-- Compiling architecture almost_super_speed of MBE_dadda_mult_9x9
+-- Loading entity MBE_dadda_mult_9x9
+-- Compiling architecture super_speed of MBE_dadda_mult_9x9
+-- Loading entity MBE_dadda_mult_9x9
 
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/fulladd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/fulladd.vhd
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/fulladd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/FULLADD.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -285,6 +279,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity BK_18bit
 -- Compiling architecture struct of BK_18bit
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity halfadd
+-- Compiling architecture DATAFLOW of halfadd
+
+} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/FA_ARRAY.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/FA_ARRAY.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FA_ARRAY
+-- Compiling architecture struct of FA_ARRAY
 
 } {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/FIR_Filter_Unf_MultPipe.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -303,22 +314,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity Cell_Unf_Pipe
 -- Compiling architecture beh of Cell_Unf_Pipe
-
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/MBE_dadda_mult/halfadd.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity halfadd
--- Compiling architecture DATAFLOW of halfadd
-
-} {} {}} C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/FA_ARRAY.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/meaep/Documents/GitHub/ISA2/VHDL/adder18/FA_ARRAY.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity FA_ARRAY
--- Compiling architecture struct of FA_ARRAY
 
 } {} {}}

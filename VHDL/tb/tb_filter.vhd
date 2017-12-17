@@ -156,7 +156,7 @@ test_results_write: PROCESS(CLK)
 	VARIABLE oLine: LINE;
 	VARIABLE i: INTEGER := 0;
 	BEGIN
-		file_open(results, "output_vectors_unf_pipe_approx.txt", WRITE_MODE);
+		file_open(results, "output_vectors_unf_pipe_testing.txt", WRITE_MODE);
 		IF CLK'EVENT AND CLK = '1' THEN
 			IF VIN = '1' AND i <= input_samples'LENGTH - 3 THEN
 				sample(0) <= to_signed(input_samples(i),sample(0)'LENGTH);
