@@ -14,8 +14,14 @@ END ENTITY;
 ARCHITECTURE beh_shift OF shift_n_Roorda IS
 
 BEGIN
-	data_out(shift-1 DOWNTO 0) <= (OTHERS => '0');
+	zero_shift: IF (shift > 0) GENERATE
+		data_out(shift-1 DOWNTO 0) <= (OTHERS => '0');
+	END GENERATE;
+
 	data_out(Nb-1+shift DOWNTO shift) <= data_in(Nb-1 DOWNTO 0);
 	data_out(Nb+shift) <= NOT(data_in(Nb));
+
+	eight_shift: IF (shift < 8) GENERATE
 	data_out(2*Nb-1 DOWNTO Nb+shift+1) <= (OTHERS => '1');
+	END GENERATE;
 END beh_shift;
