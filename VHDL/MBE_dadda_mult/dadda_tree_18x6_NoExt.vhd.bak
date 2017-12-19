@@ -732,7 +732,8 @@ BEGIN
 	level1(3)(7) <= level2 (3)(7);
 	level1(3)(8) <= level2 (5)(8);
 	
-	
+--additive 0s for next layer
+	level0(3)(5) <= '0';
 	
 --from level2 to level1 compression layer
 	level2to1: for i in 6 to 15 generate
@@ -838,8 +839,8 @@ BEGIN
 													end generate level1to0_ha_cond_last;		
 					end generate level1to0;			
 --level0 to output
-	out0(17 DOWNTO 7) <= level0(0)(17 DOWNTO 0); --operand 1
-	out1(17 DOWNTO 7) <= level0(1)(17 DOWNTO 0); --operand 2
+	out0(17 DOWNTO 0) <= level0(0)(17 DOWNTO 0); --operand 1
+	out1(17 DOWNTO 0) <= level0(1)(17 DOWNTO 0); --operand 2
 END final;
 
 Architecture final_cut of dadda_tree_18x6_NoExt is

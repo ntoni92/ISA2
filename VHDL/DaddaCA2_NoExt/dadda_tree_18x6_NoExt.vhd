@@ -732,7 +732,8 @@ BEGIN
 	level1(3)(7) <= level2 (3)(7);
 	level1(3)(8) <= level2 (5)(8);
 	
-	
+--additive 0s for next layer
+	level1(3)(5) <= '0';
 	
 --from level2 to level1 compression layer
 	level2to1: for i in 6 to 15 generate
