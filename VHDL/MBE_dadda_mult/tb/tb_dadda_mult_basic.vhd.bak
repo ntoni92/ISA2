@@ -20,7 +20,7 @@ END component;
 
 BEGIN
 	
-DUT: 	ENTITY work.MBE_dadda_mult_9x9(super_speed)
+DUT: 	ENTITY work.MBE_dadda_mult_9x9(final)
 	PORT MAP(	A => A, 
 			B => B,
 			m_out => m_out);

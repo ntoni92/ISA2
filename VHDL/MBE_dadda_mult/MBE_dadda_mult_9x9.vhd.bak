@@ -65,7 +65,7 @@ BEGIN
 						splitToDadda(i) <= MBEToSplit((18*(i+1))-1 downto (18*i));
 					end generate Splitting;
 					
-	dadda_tree: ENTITY work.dadda_tree_18x6_NoExt(structural)
+	dadda_tree: ENTITY work.dadda_tree_18x6_NoExt(Roorda)
 					PORT MAP(in0 => splitToDadda(0),
 															in1 => splitToDadda(1),
 															in2 => splitToDadda(2),

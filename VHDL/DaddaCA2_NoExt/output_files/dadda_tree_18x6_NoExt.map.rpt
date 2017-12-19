@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dadda_tree_18x6_NoExt
-Tue Dec 19 18:22:32 2017
+Tue Dec 19 23:39:33 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -15,24 +15,10 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Port Connectivity Checks: "halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha"
- 10. Port Connectivity Checks: "compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42"
- 11. Port Connectivity Checks: "compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42"
- 12. Port Connectivity Checks: "compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42"
- 13. Port Connectivity Checks: "compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42"
- 14. Port Connectivity Checks: "compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42"
- 15. Port Connectivity Checks: "compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42"
- 16. Port Connectivity Checks: "compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42"
- 17. Port Connectivity Checks: "compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx"
- 18. Port Connectivity Checks: "compressor_42_approx:\level1to0:5:level1to0_42approx_cond:level1to0_42approx"
- 19. Port Connectivity Checks: "compressor_42_approx:\level1to0:4:level1to0_42approx_cond:level1to0_42approx"
- 20. Port Connectivity Checks: "halfadd:\level1to0:3:level1to0_ha_cond_first:level1to0_ha"
- 21. Port Connectivity Checks: "halfadd:\level1to0:2:level1to0_ha_cond_first:level1to0_ha"
- 22. Port Connectivity Checks: "compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42"
- 23. Port Connectivity Checks: "compressor_53:\level2to1:10:level2to1_42_cond_first:level2to1_42"
- 24. Port Connectivity Checks: "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "compressor_53:\level2to1:13:level2to1_53_cond_last:level2to1_53"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -59,7 +45,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 19 18:22:32 2017       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 19 23:39:33 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; dadda_tree_18x6_NoExt                       ;
 ; Top-level Entity Name           ; dadda_tree_18x6_NoExt                       ;
@@ -200,14 +186,14 @@ agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 16           ;
+; Estimate of Logic utilization (ALMs needed) ; 20           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 27           ;
+; Combinational ALUT usage for logic          ; 35           ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 5            ;
-;     -- 5 input functions                    ; 15           ;
-;     -- 4 input functions                    ; 2            ;
-;     -- <=3 input functions                  ; 5            ;
+;     -- 6 input functions                    ; 4            ;
+;     -- 5 input functions                    ; 22           ;
+;     -- 4 input functions                    ; 5            ;
+;     -- <=3 input functions                  ; 4            ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 0            ;
 ;                                             ;              ;
@@ -215,10 +201,10 @@ agreement for further details.
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
-; Maximum fan-out node                        ; in0[7]~input ;
+; Maximum fan-out node                        ; in0[6]~input ;
 ; Maximum fan-out                             ; 4            ;
-; Total fan-out                               ; 291          ;
-; Average fan-out                             ; 0.92         ;
+; Total fan-out                               ; 332          ;
+; Average fan-out                             ; 1.03         ;
 +---------------------------------------------+--------------+
 
 
@@ -227,31 +213,30 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                                                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Entity Name           ; Library Name ;
 +-----------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |dadda_tree_18x6_NoExt                                                            ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 144  ; 0            ; |dadda_tree_18x6_NoExt                                                                              ; dadda_tree_18x6_NoExt ; work         ;
-;    |compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
+; |dadda_tree_18x6_NoExt                                                            ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 144  ; 0            ; |dadda_tree_18x6_NoExt                                                                              ; dadda_tree_18x6_NoExt ; work         ;
+;    |compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
 ;    |compressor_42_approx:\level1to0:7:level1to0_42approx_cond:level1to0_42approx| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:7:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
 ;    |compressor_42_approx:\level1to0:8:level1to0_42approx_cond:level1to0_42approx| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:8:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
-;    |compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx ; compressor_42_approx  ; work         ;
-;    |compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
-;       |fulladd:f1|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42|fulladd:f1        ; fulladd               ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
-;    |compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
-;       |fulladd:f1|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42|fulladd:f1        ; fulladd               ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
-;    |compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
-;    |compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
-;    |compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
-;    |compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
-;    |compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42                    ; compressor_53         ; work         ;
-;       |fulladd:f1|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42|fulladd:f1         ; fulladd               ; work         ;
-;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42|fulladd:f2         ; fulladd               ; work         ;
-;    |compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42|              ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42              ; compressor_53         ; work         ;
-;       |fulladd:f2|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42|fulladd:f2   ; fulladd               ; work         ;
-;    |halfadd:\level1to0:16:level1to0_ha_cond_last:level1to0_ha|                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|halfadd:\level1to0:16:level1to0_ha_cond_last:level1to0_ha                    ; halfadd               ; work         ;
+;    |compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx ; compressor_42_approx  ; work         ;
+;    |compressor_53:\level2to1:10:level2to1_53_cond_first:level2to1_53|             ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:10:level2to1_53_cond_first:level2to1_53             ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:10:level2to1_53_cond_first:level2to1_53|fulladd:f2  ; fulladd               ; work         ;
+;    |compressor_53:\level2to1:11:level2to1_53_cond_mid:level2to1_53|               ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:11:level2to1_53_cond_mid:level2to1_53               ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:11:level2to1_53_cond_mid:level2to1_53|fulladd:f2    ; fulladd               ; work         ;
+;    |compressor_53:\level2to1:12:level2to1_53_cond_mid:level2to1_53|               ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:12:level2to1_53_cond_mid:level2to1_53               ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:12:level2to1_53_cond_mid:level2to1_53|fulladd:f2    ; fulladd               ; work         ;
+;    |compressor_53:\level2to1:13:level2to1_53_cond_last:level2to1_53|              ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:13:level2to1_53_cond_last:level2to1_53              ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:13:level2to1_53_cond_last:level2to1_53|fulladd:f2   ; fulladd               ; work         ;
+;    |compressor_53:\level2to1:9:level2to1_53_cond_first:level2to1_53|              ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:9:level2to1_53_cond_first:level2to1_53              ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:9:level2to1_53_cond_first:level2to1_53|fulladd:f2   ; fulladd               ; work         ;
+;    |fulladd:\level1to0:10:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:10:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:11:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:11:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:12:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:12:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:13:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:13:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:14:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:14:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:15:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:15:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:16:level1to0_42_cond:level1to0_fa|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:16:level1to0_42_cond:level1to0_fa                         ; fulladd               ; work         ;
+;    |fulladd:\level1to0:9:level1to0_42_cond:level1to0_fa|                          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:9:level1to0_42_cond:level1to0_fa                          ; fulladd               ; work         ;
+;    |fulladd:\level2to1:14:level2to1_fa_cond:level2to1_ha|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level2to1:14:level2to1_fa_cond:level2to1_ha                         ; fulladd               ; work         ;
 ;    |halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha                    ; halfadd               ; work         ;
 +-----------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -281,157 +266,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42"                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; a         ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42"                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42"                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42"                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42"                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; a         ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42"                              ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; a         ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42"                               ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx"       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; sum0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_42_approx:\level1to0:5:level1to0_42approx_cond:level1to0_42approx"       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; a    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; sum0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; sum1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_42_approx:\level1to0:4:level1to0_42approx_cond:level1to0_42approx"       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; sum0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; sum1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "halfadd:\level1to0:3:level1to0_ha_cond_first:level1to0_ha"                           ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; sum   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "halfadd:\level1to0:2:level1to0_ha_cond_first:level1to0_ha"                           ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; sum   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42"                         ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level2to1:10:level2to1_42_cond_first:level2to1_42"                        ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42"                         ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level2to1:13:level2to1_53_cond_last:level2to1_53" ;
++------+-------+----------+-------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                           ;
++------+-------+----------+-------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                      ;
++------+-------+----------+-------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -439,19 +280,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 32                          ;
-;     normal            ; 32                          ;
+; arriav_lcell_comb     ; 40                          ;
+;     normal            ; 40                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 15                          ;
-;         6 data inputs ; 5                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 4                           ;
 ; boundary_port         ; 144                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.83                        ;
+; Average LUT depth     ; 2.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -470,7 +311,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Dec 19 18:22:11 2017
+    Info: Processing started: Tue Dec 19 23:39:16 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dadda_tree_18x6_NoExt -c dadda_tree_18x6_NoExt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
@@ -481,11 +322,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file halfadd
 Info (12021): Found 2 design units, including 1 entities, in source file fulladd.vhd
     Info (12022): Found design unit 1: fulladd-beh File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/fulladd.vhd Line: 10
     Info (12023): Found entity 1: fulladd File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/fulladd.vhd Line: 4
-Info (12021): Found 5 design units, including 1 entities, in source file dadda_tree_18x6_noext.vhd
+Info (12021): Found 6 design units, including 1 entities, in source file dadda_tree_18x6_noext.vhd
     Info (12022): Found design unit 1: dadda_tree_18x6_NoExt-Roorda File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 18
     Info (12022): Found design unit 2: dadda_tree_18x6_NoExt-approx File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 246
     Info (12022): Found design unit 3: dadda_tree_18x6_NoExt-approxCut File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 474
     Info (12022): Found design unit 4: dadda_tree_18x6_NoExt-final File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 664
+    Info (12022): Found design unit 5: dadda_tree_18x6_NoExt-final_cut File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 845
     Info (12023): Found entity 1: dadda_tree_18x6_NoExt File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file compressor_53_approx.vhd
     Info (12022): Found design unit 1: compressor_53_approx-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53_approx.vhd Line: 15
@@ -494,13 +336,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file compres
     Info (12022): Found design unit 1: compressor_53-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 9
     Info (12023): Found entity 1: compressor_53 File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 4
 Info (12127): Elaborating entity "dadda_tree_18x6_NoExt" for the top level hierarchy
-Info (12128): Elaborating entity "halfadd" for hierarchy "halfadd:\level2to1:6:level2to1_ha_cond_first:level2to1_ha" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 752
+Info (12128): Elaborating entity "halfadd" for hierarchy "halfadd:\level2to1:6:level2to1_ha_cond_first:level2to1_ha" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 906
 Warning (12125): Using design file compressor_42_approx.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: compressor_42_approx-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_42_approx.vhd Line: 15
     Info (12023): Found entity 1: compressor_42_approx File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_42_approx.vhd Line: 5
-Info (12128): Elaborating entity "compressor_42_approx" for hierarchy "compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 758
-Info (12128): Elaborating entity "compressor_53" for hierarchy "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 766
-Info (12128): Elaborating entity "fulladd" for hierarchy "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42|fulladd:f1" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 19
+Info (12128): Elaborating entity "compressor_42_approx" for hierarchy "compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 912
+Info (12128): Elaborating entity "compressor_53" for hierarchy "compressor_53:\level2to1:9:level2to1_53_cond_first:level2to1_53" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 920
+Info (12128): Elaborating entity "fulladd" for hierarchy "compressor_53:\level2to1:9:level2to1_53_cond_first:level2to1_53|fulladd:f1" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 19
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out0[0]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
     Warning (13410): Pin "out0[1]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
@@ -515,11 +357,10 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "out1[3]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
     Warning (13410): Pin "out1[4]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
     Warning (13410): Pin "out1[5]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[6]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 59 input pin(s) that do not drive logic
+Warning (21074): Design contains 58 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "in0[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
     Warning (15610): No output dependent on input pin "in0[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
     Warning (15610): No output dependent on input pin "in0[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
@@ -576,17 +417,16 @@ Warning (21074): Design contains 59 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "in5[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
     Warning (15610): No output dependent on input pin "in5[7]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
     Warning (15610): No output dependent on input pin "in5[10]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[12]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
     Warning (15610): No output dependent on input pin "in5[14]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
     Warning (15610): No output dependent on input pin "in5[16]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-Info (21057): Implemented 171 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 179 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 108 input pins
     Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 27 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info (21061): Implemented 35 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 76 warnings
     Info: Peak virtual memory: 775 megabytes
-    Info: Processing ended: Tue Dec 19 18:22:32 2017
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Processing ended: Tue Dec 19 23:39:33 2017
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
 
 
