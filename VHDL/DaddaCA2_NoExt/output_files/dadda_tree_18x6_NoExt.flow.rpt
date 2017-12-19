@@ -1,5 +1,5 @@
 Flow report for dadda_tree_18x6_NoExt
-Thu Dec 07 15:55:37 2017
+Tue Dec 19 18:23:43 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Dec 07 15:55:28 2017       ;
+; Flow Status                     ; Successful - Tue Dec 19 18:23:35 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; dadda_tree_18x6_NoExt                       ;
 ; Top-level Entity Name           ; dadda_tree_18x6_NoExt                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 21 / 56,480 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 18 / 56,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 144 / 268 ( 54 % )                          ;
 ; Total virtual pins              ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 12/07/2017 15:54:22   ;
+; Start date & time ; 12/19/2017 18:22:13   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; dadda_tree_18x6_NoExt ;
 +-------------------+-----------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 114379635308153.151265846209740        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 114379635308153.151370413325296        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -92,11 +92,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 774 MB              ; 00:00:30                           ;
-; Fitter                    ; 00:00:41     ; 1.0                     ; 2693 MB             ; 00:01:12                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 749 MB              ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.1                     ; 1109 MB             ; 00:00:07                           ;
-; Total                     ; 00:01:12     ; --                      ; --                  ; 00:01:58                           ;
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 775 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:48     ; 1.0                     ; 2691 MB             ; 00:01:14                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 750 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.1                     ; 1106 MB             ; 00:00:07                           ;
+; Total                     ; 00:01:26     ; --                      ; --                  ; 00:01:58                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dadda_tree_18x6_NoExt
-Thu Dec 07 15:54:35 2017
+Tue Dec 19 18:22:32 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -14,12 +14,25 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "halfadd:\level1to0:17:level1to0_ha_mid_cond:level1to0_ha"
- 10. Port Connectivity Checks: "fulladd:\level1to0:7:level1to0_fa_second_cond:level1to0_fa"
- 11. Port Connectivity Checks: "fulladd:\level2to1:7:level2to1_fa_cond:level2to1_fa"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha"
+ 10. Port Connectivity Checks: "compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42"
+ 11. Port Connectivity Checks: "compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42"
+ 12. Port Connectivity Checks: "compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42"
+ 13. Port Connectivity Checks: "compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42"
+ 14. Port Connectivity Checks: "compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42"
+ 15. Port Connectivity Checks: "compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42"
+ 16. Port Connectivity Checks: "compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42"
+ 17. Port Connectivity Checks: "compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx"
+ 18. Port Connectivity Checks: "compressor_42_approx:\level1to0:5:level1to0_42approx_cond:level1to0_42approx"
+ 19. Port Connectivity Checks: "compressor_42_approx:\level1to0:4:level1to0_42approx_cond:level1to0_42approx"
+ 20. Port Connectivity Checks: "halfadd:\level1to0:3:level1to0_ha_cond_first:level1to0_ha"
+ 21. Port Connectivity Checks: "halfadd:\level1to0:2:level1to0_ha_cond_first:level1to0_ha"
+ 22. Port Connectivity Checks: "compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42"
+ 23. Port Connectivity Checks: "compressor_53:\level2to1:10:level2to1_42_cond_first:level2to1_42"
+ 24. Port Connectivity Checks: "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -46,7 +59,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 07 15:54:35 2017       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 19 18:22:32 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; dadda_tree_18x6_NoExt                       ;
 ; Top-level Entity Name           ; dadda_tree_18x6_NoExt                       ;
@@ -169,16 +182,17 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; halfadd.vhd                      ; yes             ; User VHDL File  ; C:/Users/meaep/Desktop/DaddaCA2_NoExt/halfadd.vhd               ;         ;
-; fulladd.vhd                      ; yes             ; User VHDL File  ; C:/Users/meaep/Desktop/DaddaCA2_NoExt/fulladd.vhd               ;         ;
-; dadda_tree_18x6_NoExt.vhd        ; yes             ; User VHDL File  ; C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd ;         ;
-; compressor_53_approx.vhd         ; yes             ; User VHDL File  ; C:/Users/meaep/Desktop/DaddaCA2_NoExt/compressor_53_approx.vhd  ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------+---------+
+; halfadd.vhd                      ; yes             ; User VHDL File        ; C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/halfadd.vhd               ;         ;
+; fulladd.vhd                      ; yes             ; User VHDL File        ; C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/fulladd.vhd               ;         ;
+; dadda_tree_18x6_NoExt.vhd        ; yes             ; User VHDL File        ; C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd ;         ;
+; compressor_53.vhd                ; yes             ; User VHDL File        ; C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd         ;         ;
+; compressor_42_approx.vhd         ; yes             ; Auto-Found VHDL File  ; C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_42_approx.vhd  ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -186,14 +200,14 @@ agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 21           ;
+; Estimate of Logic utilization (ALMs needed) ; 16           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 37           ;
+; Combinational ALUT usage for logic          ; 27           ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 4            ;
+;     -- 6 input functions                    ; 5            ;
 ;     -- 5 input functions                    ; 15           ;
-;     -- 4 input functions                    ; 14           ;
-;     -- <=3 input functions                  ; 4            ;
+;     -- 4 input functions                    ; 2            ;
+;     -- <=3 input functions                  ; 5            ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 0            ;
 ;                                             ;              ;
@@ -202,40 +216,44 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; in0[7]~input ;
-; Maximum fan-out                             ; 6            ;
-; Total fan-out                               ; 331          ;
-; Average fan-out                             ; 1.02         ;
+; Maximum fan-out                             ; 4            ;
+; Total fan-out                               ; 291          ;
+; Average fan-out                             ; 0.92         ;
 +---------------------------------------------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                         ;
-+-----------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node                                                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                           ; Entity Name           ; Library Name ;
-+-----------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |dadda_tree_18x6_NoExt                                                      ; 37 (0)              ; 0 (0)                     ; 0                 ; 0          ; 144  ; 0            ; |dadda_tree_18x6_NoExt                                                                        ; dadda_tree_18x6_NoExt ; work         ;
-;    |compressor_53_approx:\level3to2:10:level3to2_53_cond_mid:level3to2_53|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53_approx:\level3to2:10:level3to2_53_cond_mid:level3to2_53  ; compressor_53_approx  ; work         ;
-;    |compressor_53_approx:\level3to2:11:level3to2_53_cond:level3to2_53|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53_approx:\level3to2:11:level3to2_53_cond:level3to2_53      ; compressor_53_approx  ; work         ;
-;    |compressor_53_approx:\level3to2:8:level3to2_53_cond_first:level3to2_53| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53_approx:\level3to2:8:level3to2_53_cond_first:level3to2_53 ; compressor_53_approx  ; work         ;
-;    |compressor_53_approx:\level3to2:9:level3to2_53_cond_mid:level3to2_53|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53_approx:\level3to2:9:level3to2_53_cond_mid:level3to2_53   ; compressor_53_approx  ; work         ;
-;    |fulladd:\level1to0:10:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:10:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:11:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:11:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:12:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:12:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:13:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:13:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:14:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:14:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:15:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:15:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:16:level1to0_fa_second_cond:level1to0_fa|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:16:level1to0_fa_second_cond:level1to0_fa            ; fulladd               ; work         ;
-;    |fulladd:\level1to0:7:level1to0_fa_second_cond:level1to0_fa|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:7:level1to0_fa_second_cond:level1to0_fa             ; fulladd               ; work         ;
-;    |fulladd:\level1to0:8:level1to0_fa_second_cond:level1to0_fa|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:8:level1to0_fa_second_cond:level1to0_fa             ; fulladd               ; work         ;
-;    |fulladd:\level1to0:9:level1to0_fa_second_cond:level1to0_fa|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level1to0:9:level1to0_fa_second_cond:level1to0_fa             ; fulladd               ; work         ;
-;    |fulladd:\level2to1:12:level2to1_fa_cond:level2to1_fa|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level2to1:12:level2to1_fa_cond:level2to1_fa                   ; fulladd               ; work         ;
-;    |fulladd:\level2to1:13:level2to1_fa_cond:level2to1_fa|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level2to1:13:level2to1_fa_cond:level2to1_fa                   ; fulladd               ; work         ;
-;    |fulladd:\level2to1:14:level2to1_fa_cond:level2to1_fa|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level2to1:14:level2to1_fa_cond:level2to1_fa                   ; fulladd               ; work         ;
-;    |fulladd:\level2to1:9:level2to1_fa_cond:level2to1_fa|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level2to1:9:level2to1_fa_cond:level2to1_fa                    ; fulladd               ; work         ;
-;    |fulladd:\level3to2:12:level3to2_fa_cond:level3to2_fa|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|fulladd:\level3to2:12:level3to2_fa_cond:level3to2_fa                   ; fulladd               ; work         ;
-;    |halfadd:\level1to0:17:level1to0_ha_mid_cond:level1to0_ha|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|halfadd:\level1to0:17:level1to0_ha_mid_cond:level1to0_ha               ; halfadd               ; work         ;
-;    |halfadd:\level2to1:10:level2to1_ha_mid_cond:level2to1_ha|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|halfadd:\level2to1:10:level2to1_ha_mid_cond:level2to1_ha               ; halfadd               ; work         ;
-+-----------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------+-----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                     ;
++-----------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node                                                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Entity Name           ; Library Name ;
++-----------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |dadda_tree_18x6_NoExt                                                            ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 144  ; 0            ; |dadda_tree_18x6_NoExt                                                                              ; dadda_tree_18x6_NoExt ; work         ;
+;    |compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
+;    |compressor_42_approx:\level1to0:7:level1to0_42approx_cond:level1to0_42approx| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:7:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
+;    |compressor_42_approx:\level1to0:8:level1to0_42approx_cond:level1to0_42approx| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level1to0:8:level1to0_42approx_cond:level1to0_42approx ; compressor_42_approx  ; work         ;
+;    |compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx ; compressor_42_approx  ; work         ;
+;    |compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
+;       |fulladd:f1|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42|fulladd:f1        ; fulladd               ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
+;    |compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
+;       |fulladd:f1|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42|fulladd:f1        ; fulladd               ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
+;    |compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
+;    |compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
+;    |compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
+;    |compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42|                   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42                   ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42|fulladd:f2        ; fulladd               ; work         ;
+;    |compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42|                    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42                    ; compressor_53         ; work         ;
+;       |fulladd:f1|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42|fulladd:f1         ; fulladd               ; work         ;
+;       |fulladd:f2|                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42|fulladd:f2         ; fulladd               ; work         ;
+;    |compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42|              ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42              ; compressor_53         ; work         ;
+;       |fulladd:f2|                                                                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42|fulladd:f2   ; fulladd               ; work         ;
+;    |halfadd:\level1to0:16:level1to0_ha_cond_last:level1to0_ha|                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|halfadd:\level1to0:16:level1to0_ha_cond_last:level1to0_ha                    ; halfadd               ; work         ;
+;    |halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dadda_tree_18x6_NoExt|halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha                    ; halfadd               ; work         ;
++-----------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -255,7 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "halfadd:\level1to0:17:level1to0_ha_mid_cond:level1to0_ha"                            ;
+; Port Connectivity Checks: "halfadd:\level1to0:17:level1to0_ha_cond_last:level1to0_ha"                           ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -263,22 +281,157 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fulladd:\level1to0:7:level1to0_fa_second_cond:level1to0_fa" ;
-+------+-------+----------+--------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                      ;
-+------+-------+----------+--------------------------------------------------------------+
-; cin  ; Input ; Info     ; Stuck at GND                                                 ;
-+------+-------+----------+--------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:15:level1to0_42_cond:level1to0_42"                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; a         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fulladd:\level2to1:7:level2to1_fa_cond:level2to1_fa" ;
-+------+-------+----------+-------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                               ;
-+------+-------+----------+-------------------------------------------------------+
-; cin  ; Input ; Info     ; Stuck at GND                                          ;
-+------+-------+----------+-------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:14:level1to0_42_cond:level1to0_42"                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:13:level1to0_42_cond:level1to0_42"                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:12:level1to0_42_cond:level1to0_42"                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:11:level1to0_42_cond:level1to0_42"                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; a         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:10:level1to0_42_cond:level1to0_42"                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; a         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level1to0:9:level1to0_42_cond:level1to0_42"                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_42_approx:\level1to0:6:level1to0_42approx_cond:level1to0_42approx"       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_42_approx:\level1to0:5:level1to0_42approx_cond:level1to0_42approx"       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; a    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sum0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; sum1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_42_approx:\level1to0:4:level1to0_42approx_cond:level1to0_42approx"       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum0 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; sum1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "halfadd:\level1to0:3:level1to0_ha_cond_first:level1to0_ha"                           ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; sum   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "halfadd:\level1to0:2:level1to0_ha_cond_first:level1to0_ha"                           ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; sum   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level2to1:11:level2to1_42_cond_last:level2to1_42"                         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level2to1:10:level2to1_42_cond_first:level2to1_42"                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42"                         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry_in  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -286,19 +439,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 40                          ;
-;     normal            ; 40                          ;
+; arriav_lcell_comb     ; 32                          ;
+;     normal            ; 32                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 14                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 2                           ;
 ;         5 data inputs ; 15                          ;
-;         6 data inputs ; 4                           ;
+;         6 data inputs ; 5                           ;
 ; boundary_port         ; 144                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.08                        ;
+; Average LUT depth     ; 1.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -317,127 +470,123 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Dec 07 15:54:21 2017
+    Info: Processing started: Tue Dec 19 18:22:11 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dadda_tree_18x6_NoExt -c dadda_tree_18x6_NoExt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Warning (20031): Parallel compilation is enabled for 4 processors, but there are only 2 processors in the system. Runtime may increase due to over usage of the processor space.
 Info (12021): Found 2 design units, including 1 entities, in source file halfadd.vhd
-    Info (12022): Found design unit 1: halfadd-DATAFLOW File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/halfadd.vhd Line: 9
-    Info (12023): Found entity 1: halfadd File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/halfadd.vhd Line: 4
+    Info (12022): Found design unit 1: halfadd-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/halfadd.vhd Line: 9
+    Info (12023): Found entity 1: halfadd File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/halfadd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file fulladd.vhd
-    Info (12022): Found design unit 1: fulladd-beh File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/fulladd.vhd Line: 10
-    Info (12023): Found entity 1: fulladd File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/fulladd.vhd Line: 4
-Info (12021): Found 4 design units, including 1 entities, in source file dadda_tree_18x6_noext.vhd
-    Info (12022): Found design unit 1: dadda_tree_18x6_NoExt-structural File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 18
-    Info (12022): Found design unit 2: dadda_tree_18x6_NoExt-approx File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 246
-    Info (12022): Found design unit 3: dadda_tree_18x6_NoExt-approxCut File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 474
-    Info (12023): Found entity 1: dadda_tree_18x6_NoExt File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 5
+    Info (12022): Found design unit 1: fulladd-beh File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/fulladd.vhd Line: 10
+    Info (12023): Found entity 1: fulladd File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/fulladd.vhd Line: 4
+Info (12021): Found 5 design units, including 1 entities, in source file dadda_tree_18x6_noext.vhd
+    Info (12022): Found design unit 1: dadda_tree_18x6_NoExt-Roorda File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 18
+    Info (12022): Found design unit 2: dadda_tree_18x6_NoExt-approx File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 246
+    Info (12022): Found design unit 3: dadda_tree_18x6_NoExt-approxCut File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 474
+    Info (12022): Found design unit 4: dadda_tree_18x6_NoExt-final File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 664
+    Info (12023): Found entity 1: dadda_tree_18x6_NoExt File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file compressor_53_approx.vhd
-    Info (12022): Found design unit 1: compressor_53_approx-DATAFLOW File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/compressor_53_approx.vhd Line: 15
-    Info (12023): Found entity 1: compressor_53_approx File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/compressor_53_approx.vhd Line: 5
+    Info (12022): Found design unit 1: compressor_53_approx-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53_approx.vhd Line: 15
+    Info (12023): Found entity 1: compressor_53_approx File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53_approx.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file compressor_53.vhd
-    Info (12022): Found design unit 1: compressor_53-DATAFLOW File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/compressor_53.vhd Line: 9
-    Info (12023): Found entity 1: compressor_53 File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/compressor_53.vhd Line: 4
+    Info (12022): Found design unit 1: compressor_53-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 9
+    Info (12023): Found entity 1: compressor_53 File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 4
 Info (12127): Elaborating entity "dadda_tree_18x6_NoExt" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "level2[0][7]" at dadda_tree_18x6_NoExt.vhd(481) File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 481
-Warning (10873): Using initial value X (don't care) for net "level1[0][7]" at dadda_tree_18x6_NoExt.vhd(482) File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 482
-Warning (10873): Using initial value X (don't care) for net "level0[0][7]" at dadda_tree_18x6_NoExt.vhd(483) File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 483
-Info (12128): Elaborating entity "halfadd" for hierarchy "halfadd:\level3to2:7:level3to2_ha_low_cond:level3to2_ha" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 535
-Info (12128): Elaborating entity "compressor_53_approx" for hierarchy "compressor_53_approx:\level3to2:8:level3to2_53_cond_first:level3to2_53" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 554
-Info (12128): Elaborating entity "fulladd" for hierarchy "fulladd:\level3to2:12:level3to2_fa_cond:level3to2_fa" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 547
+Info (12128): Elaborating entity "halfadd" for hierarchy "halfadd:\level2to1:6:level2to1_ha_cond_first:level2to1_ha" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 752
+Warning (12125): Using design file compressor_42_approx.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: compressor_42_approx-DATAFLOW File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_42_approx.vhd Line: 15
+    Info (12023): Found entity 1: compressor_42_approx File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_42_approx.vhd Line: 5
+Info (12128): Elaborating entity "compressor_42_approx" for hierarchy "compressor_42_approx:\level2to1:8:level2to1_42approx_cond:level2to1_42approx" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 758
+Info (12128): Elaborating entity "compressor_53" for hierarchy "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 766
+Info (12128): Elaborating entity "fulladd" for hierarchy "compressor_53:\level2to1:9:level2to1_42_cond_first:level2to1_42|fulladd:f1" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/compressor_53.vhd Line: 19
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "out0[0]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[1]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[2]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[3]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[4]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[5]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[6]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out0[7]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
-    Warning (13410): Pin "out1[0]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[1]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[2]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[3]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[4]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[5]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
-    Warning (13410): Pin "out1[6]" is stuck at GND File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out0[0]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out0[1]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out0[2]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out0[3]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out0[4]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out0[5]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out0[6]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 13
+    Warning (13410): Pin "out1[0]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out1[1]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out1[2]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out1[3]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out1[4]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out1[5]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
+    Warning (13410): Pin "out1[6]" is stuck at GND File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 64 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "in0[0]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[1]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[2]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[3]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[4]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[5]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[6]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[11]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[12]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[13]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[14]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[15]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[16]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in0[17]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
-    Warning (15610): No output dependent on input pin "in1[0]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[1]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[2]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[3]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[4]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[5]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[6]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[13]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[14]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[15]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[16]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in1[17]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
-    Warning (15610): No output dependent on input pin "in2[0]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[1]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[2]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[3]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[4]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[5]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[6]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[15]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[16]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in2[17]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
-    Warning (15610): No output dependent on input pin "in3[0]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[1]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[2]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[3]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[4]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[5]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[6]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in3[17]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
-    Warning (15610): No output dependent on input pin "in4[0]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[1]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[2]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[3]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[4]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[5]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[6]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in4[7]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
-    Warning (15610): No output dependent on input pin "in5[0]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[1]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[2]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[3]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[4]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[5]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[6]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[7]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[10]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[12]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[14]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-    Warning (15610): No output dependent on input pin "in5[16]" File: C:/Users/meaep/Desktop/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
-Info (21057): Implemented 181 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 59 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in0[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[3]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[4]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[11]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[12]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[13]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[14]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[15]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[16]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in0[17]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 7
+    Warning (15610): No output dependent on input pin "in1[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[3]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[4]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[13]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[14]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[15]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[16]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in1[17]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 8
+    Warning (15610): No output dependent on input pin "in2[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[3]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[4]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[15]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[16]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in2[17]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 9
+    Warning (15610): No output dependent on input pin "in3[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in3[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in3[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in3[3]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in3[4]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in3[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in3[17]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 10
+    Warning (15610): No output dependent on input pin "in4[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[3]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[4]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[6]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in4[7]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 11
+    Warning (15610): No output dependent on input pin "in5[0]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[1]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[2]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[3]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[4]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[5]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[7]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[10]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[12]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[14]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+    Warning (15610): No output dependent on input pin "in5[16]" File: C:/Users/meaep/Documents/GitHub/ISA2/VHDL/DaddaCA2_NoExt/dadda_tree_18x6_NoExt.vhd Line: 12
+Info (21057): Implemented 171 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 108 input pins
     Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 37 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 86 warnings
-    Info: Peak virtual memory: 774 megabytes
-    Info: Processing ended: Thu Dec 07 15:54:35 2017
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (21061): Implemented 27 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 775 megabytes
+    Info: Processing ended: Tue Dec 19 18:22:32 2017
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:28
 
 
