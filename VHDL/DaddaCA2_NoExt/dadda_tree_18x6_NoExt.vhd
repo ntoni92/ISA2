@@ -838,8 +838,8 @@ BEGIN
 													end generate level1to0_ha_cond_last;		
 					end generate level1to0;			
 --level0 to output
-	out0(17 DOWNTO 7) <= level0(0)(17 DOWNTO 0); --operand 1
-	out1(17 DOWNTO 7) <= level0(1)(17 DOWNTO 0); --operand 2
+	out0(17 DOWNTO 0) <= level0(0)(17 DOWNTO 0); --operand 1
+	out1(17 DOWNTO 0) <= level0(1)(17 DOWNTO 0); --operand 2
 END final;
 
 Architecture final_cut of dadda_tree_18x6_NoExt is

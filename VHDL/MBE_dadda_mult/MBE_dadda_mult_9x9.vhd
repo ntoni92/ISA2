@@ -188,14 +188,14 @@ ARCHITECTURE approxCut of MBE_dadda_mult_9x9 is
 		);
 	END Component;
 
-	COMPONENT PP_ADDER18 IS
-		PORT(
-			a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-			b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-			cin: IN STD_LOGIC;
-			cout: OUT STD_LOGIC;
-			sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
-		);
+	COMPONENT PP_ADDER11 IS
+	PORT(
+		a: IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+		b: IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+		cin: IN STD_LOGIC;
+		cout: OUT STD_LOGIC;
+		sum: OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
+	);
 	END COMPONENT;
 	
 BEGIN
@@ -220,10 +220,11 @@ BEGIN
 															out1 => daddaToSum(1));
 	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
 	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
-	tree_add: PP_ADDER18	PORT MAP(	a => daddaToSum(0),
-						b => daddaToSum(1),
+	tree_add: PP_ADDER11	PORT MAP(	a => daddaToSum(0)(17 DOWNTO 7),
+						b => daddaToSum(1)(17 DOWNTO 7),
 						cin => '0',
-						sum => m_out);
+						sum => m_out(17 DOWNTO 7));
+	m_out(6 DOWNTO 0) <= (OTHERS => '0');
 
 END approxCut;
 
@@ -332,14 +333,14 @@ ARCHITECTURE final_cut of MBE_dadda_mult_9x9 is
 		);
 	END Component;
 
-	COMPONENT PP_ADDER18 IS
-		PORT(
-			a: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-			b: IN STD_LOGIC_VECTOR(17 DOWNTO 0);
-			cin: IN STD_LOGIC;
-			cout: OUT STD_LOGIC;
-			sum: OUT STD_LOGIC_VECTOR(17 DOWNTO 0)
-		);
+	COMPONENT PP_ADDER11 IS
+	PORT(
+		a: IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+		b: IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+		cin: IN STD_LOGIC;
+		cout: OUT STD_LOGIC;
+		sum: OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
+	);
 	END COMPONENT;
 	
 BEGIN
@@ -364,9 +365,10 @@ BEGIN
 															out1 => daddaToSum(1));
 	--outLong <= to_integer(signed(daddaToSum(0))) + to_integer(signed(daddaToSum(1)));
 	--m_out <= std_logic_vector(to_signed(outLong,m_out'LENGTH));
-	tree_add: PP_ADDER18	PORT MAP(	a => daddaToSum(0),
-						b => daddaToSum(1),
+	tree_add: PP_ADDER11	PORT MAP(	a => daddaToSum(0)(17 DOWNTO 7),
+						b => daddaToSum(1)(17 DOWNTO 7),
 						cin => '0',
-						sum => m_out);
+						sum => m_out(17 DOWNTO 7));
+	m_out(6 DOWNTO 0) <= (OTHERS => '0');
 
 END final_cut;
