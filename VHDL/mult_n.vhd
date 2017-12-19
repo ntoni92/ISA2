@@ -92,7 +92,7 @@ BEGIN
 						DOUT => enable_array_signal(i+1 DOWNTO i+1));
 	END GENERATE;
 
-	multiplication: ENTITY work.MBE_dadda_mult_9x9(super_speed)
+	multiplication: ENTITY work.MBE_dadda_mult_9x9(final_cut)
 			PORT MAP (	A => in_a_reg_to_mult,
 					B => in_b_reg_to_mult,
 					m_out => pipe_array_signal(0));
